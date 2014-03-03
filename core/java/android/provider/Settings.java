@@ -6092,6 +6092,13 @@ public final class Settings {
         public static final String QS_TRANSPARENCY = "qs_transparency";
 
         /**
+        * Toast animations
+        *
+        * @hide
+        */
+        public static final String TOAST_ANIMATION = "toast_animation";
+
+        /**
          * @hide
          */
         public static final String QS_HEADER_CUSTOM_IMAGE_URI_ENABLED = "qs_header_custom_image_uri_enabled";
