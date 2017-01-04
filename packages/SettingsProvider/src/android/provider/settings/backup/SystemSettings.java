@@ -96,5 +96,7 @@ public class SystemSettings {
         Settings.System.EDGE_LIGHT_REPEAT_ANIMATION,
         Settings.System.EDGE_LIGHT_COLOR_MODE,
         Settings.System.EDGE_LIGHT_CUSTOM_COLOR,
+        Settings.System.NETWORK_TRAFFIC_STATE,
+        Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD,
     };
 }

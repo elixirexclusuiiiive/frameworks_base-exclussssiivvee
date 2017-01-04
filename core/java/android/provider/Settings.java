@@ -5889,6 +5889,18 @@ public final class Settings {
          * @hide
          */
         public static final String EDGE_LIGHT_CUSTOM_COLOR = "edge_light_custom_color";
+         
+	/**
+	 * Wheter to show network traffic indicator in statusbar
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
+
+        /**
+         * Network traffic inactivity threshold
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
 
         /**
          * Keys we no longer back up under the current schema, but want to continue to
