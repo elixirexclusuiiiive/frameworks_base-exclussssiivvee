@@ -5571,6 +5571,12 @@ public final class Settings {
          * @hide
          */
         public static final String NOTIFICATION_SOUND_VIB_SCREEN_ON = "notification_sound_vib_screen_on";
+         
+	/**
+	 * Switch between filters for lockscreen album art
+         * @hide
+         */
+        public static final String LOCKSCREEN_ALBUMART_FILTER = "lockscreen_albumart_filter";
 
         /**
          * IMPORTANT: If you add a new public settings you also have to add it to
