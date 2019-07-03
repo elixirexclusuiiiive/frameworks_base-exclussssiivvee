@@ -347,9 +347,11 @@
     <!-- Custom permissions -->
     <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
 
-    <!-- Sync tile -->
+    <!-- QS tiles -->
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.MAINLINE_NETWORK_STACK" />
+    <uses-permission android:name="android.permission.NETWORK_STACK" />
 
     <application
         android:name=".SystemUIApplication"
