@@ -5794,6 +5794,12 @@ public final class Settings {
          * @hide
          */
         public static final String ENABLE_TASKBAR = "enable_taskbar";
+         
+	/**
+	 * Use doubletap as doze pulse triggers
+         * @hide
+         */
+        public static final String DOZE_TRIGGER_DOUBLETAP = "doze_trigger_doubletap";
 
         /**
          * These are all public system settings
