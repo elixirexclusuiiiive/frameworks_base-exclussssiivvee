@@ -231,6 +231,7 @@ public class SecureSettings {
         Settings.Secure.SHOW_WIFI_STANDARD_ICON,
         Settings.Secure.GESTURE_NAVBAR_LENGTH_MODE,
         Settings.Secure.IGNORE_AUTH_CONFIRMATION,
-        Settings.Secure.DOZE_ON_CHARGE
+        Settings.Secure.DOZE_ON_CHARGE,
+        Settings.Secure.SHOW_BACK_ARROW_GESTURE,
     };
 }
