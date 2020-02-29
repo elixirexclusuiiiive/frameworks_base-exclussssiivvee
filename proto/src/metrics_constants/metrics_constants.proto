@@ -7444,5 +7444,7 @@ message MetricsEvent {
     // Custom Qs constant
     CUSTOM = 2001;
 
+    // Panel for Mobile Data
+    PANEL_MOBILE_DATA = 2004;
   }
 }
