@@ -88,6 +88,16 @@
         <com.android.systemui.tuner.StatusBarSwitch
             android:key="airplane"
             android:title="@string/status_bar_airplane" />
+            
+        <com.android.systemui.tuner.StatusBarSwitch
+            android:key="location"
+            android:title="@string/status_bar_location"
+            android:icon="@drawable/ic_statusbar_location" />
+
+       <com.android.systemui.tuner.StatusBarSwitch
+           android:key="microphone"
+           android:title="@string/status_bar_microphone"
+           android:icon="@drawable/ic_statusbar_mic" />
 
         <!-- other weird signal stuff -->
 

@@ -1321,6 +1321,12 @@
 
     <!-- Name of the alarm status bar icon. -->
     <string name="status_bar_alarm">Alarm</string>
+    
+    <!-- Name of the location status bar icon. -->
+    <string name="status_bar_location">Location</string>
+
+    <!-- Name of the microphone status bar icon. -->
+    <string name="status_bar_microphone">Microphone</string>
 
     <!-- Wallet strings -->
     <!-- Wallet empty state, title [CHAR LIMIT=32] -->
