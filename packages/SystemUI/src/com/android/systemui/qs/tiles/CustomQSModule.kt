@@ -86,6 +86,12 @@ interface CustomQSModule {
     @StringKey(SoundTile.TILE_SPEC)
     fun bindSoundTile(soundTile: SoundTile): QSTileImpl<*>
 
+    /** Inject PowerShareTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(PowerShareTile.TILE_SPEC)
+    fun bindPowerShareTile(powerShareTile: PowerShareTile): QSTileImpl<*>
+
     /** Inject SyncTile into tileMap in QSModule */
     @Binds
     @IntoMap
