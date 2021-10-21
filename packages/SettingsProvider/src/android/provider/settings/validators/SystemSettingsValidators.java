@@ -256,5 +256,6 @@ public class SystemSettingsValidators {
         VALIDATORS.put(System.HIGH_TOUCH_SENSITIVITY_ENABLE, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.FINGERPRINT_WAKE_UNLOCK, NON_NEGATIVE_INTEGER_VALIDATOR);
         VALIDATORS.put(System.USE_OLD_MOBILETYPE, BOOLEAN_VALIDATOR);
+        VALIDATORS.put(System.TORCH_POWER_BUTTON_GESTURE, new InclusiveIntegerRangeValidator(0, 2));
     }
 }
