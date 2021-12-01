@@ -42,6 +42,7 @@
     <!-- Power Menu -->
     <string name="global_action_reboot">Restart</string>
     <string name="global_action_reboot_more">Advance</string>
+    <string name="global_action_reboot_systemui">SystemUI</string>
     <string name="global_action_reboot_sub">System</string>
     <string name="global_action_reboot_recovery">Recovery</string>
     <string name="global_action_reboot_bootloader">Bootloader</string>
