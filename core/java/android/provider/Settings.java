@@ -5829,6 +5829,21 @@ public final class Settings {
          * @hide
          */
         public static final String BACK_GESTURE_HAPTIC = "back_gesture_haptic";
+        
+       /**
+       	 * GameSpace: List of added games by user
+         * @hide
+         */
+        @Readable
+        public static final String GAMESPACE_GAME_LIST = "gamespace_game_list";
+
+        /**
+         * GameSpace: Whether fullscreen intent will be suppressed while in game session
+         * @hide
+         */
+        @Readable
+        public static final String GAMESPACE_SUPPRESS_FULLSCREEN_INTENT = "gamespace_suppress_fullscreen_intent";
+
 
         /**
          * Keys we no longer back up under the current schema, but want to continue to
