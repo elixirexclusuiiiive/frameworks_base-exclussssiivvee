@@ -1536,7 +1536,7 @@ public final class SystemServiceRegistry {
                         return new AmbientContextManager(ctx.getOuterContext(), manager);
                     }});
 
- registerService(Context.POCKET_SERVICE, PocketManager.class,
+        registerService(Context.POCKET_SERVICE, PocketManager.class,
                 new CachedServiceFetcher<PocketManager>() {
                     @Override
                     public PocketManager createService(ContextImpl ctx)
@@ -1548,6 +1548,17 @@ public final class SystemServiceRegistry {
                         return new PocketManager(ctx.getOuterContext(), service);
                     }});
                     
+        registerService(Context.APP_LOCK_SERVICE, AppLockManager.class,
+                new CachedServiceFetcher<AppLockManager>() {
+                    @Override
+                    public AppLockManager createService(ContextImpl ctx)
+                            throws ServiceNotFoundException {
+                        IBinder binder = ServiceManager.getServiceOrThrow(
+                                Context.APP_LOCK_SERVICE);
+                        return new AppLockManager(ctx,
+                            IAppLockManagerService.Stub.asInterface(binder));
+                    }});
+
         sInitializing = true;
         try {
             // Note: the following functions need to be @SystemApis, once they become mainline

@@ -16,6 +16,9 @@
     <string name="reboot_to_recovery_message">Rebooting to recovery\u2026</string>
     <string name="reboot_system_title">Restart system</string>
     <string name="reboot_system_message">Restarting system\u2026</string>
+	    
+    <!-- App lock -->
+    <string name="unlock_application">Unlock <xliff:g id="label" example="Telegram">%1$s</xliff:g></string>
 
     <!-- LiveDisplay strings -->
     <string name="live_display_title" translatable="false">LiveDisplay</string>

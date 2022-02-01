@@ -48,11 +48,11 @@ import android.app.IActivityManager;
 import android.app.ActivityManager;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
-
+import android.content.pm.ApplicationInfo;
 import com.android.internal.R;
-
+import android.content.pm.ResolveInfo;
 import android.os.ServiceManager;
-
+import java.util.ArrayList;
 import com.android.internal.statusbar.IStatusBarService;
 
 import java.util.Arrays;
@@ -361,6 +361,24 @@ public static boolean deviceHasFlashlight(Context ctx) {
                 }
             }
         }
+    }
+
+    public static List<String> launchablePackages(Context context) {
+        List<String> list = new ArrayList<>();
+
+        Intent filter = new Intent(Intent.ACTION_MAIN, null);
+        filter.addCategory(Intent.CATEGORY_LAUNCHER);
+
+        List<ResolveInfo> apps = context.getPackageManager().queryIntentActivities(filter,
+                PackageManager.GET_META_DATA);
+
+        int numPackages = apps.size();
+        for (int i = 0; i < numPackages; i++) {
+            ResolveInfo app = apps.get(i);
+            list.add(app.activityInfo.packageName);
+        }
+
+        return list;
     }
 
 }
