@@ -230,5 +230,6 @@ public class SecureSettings {
         Settings.Secure.DOZE_SINGLE_TAP_GESTURE_AMBIENT,
         Settings.Secure.SHOW_WIFI_STANDARD_ICON,
         Settings.Secure.GESTURE_NAVBAR_LENGTH_MODE,
+        Settings.Secure.IGNORE_AUTH_CONFIRMATION,
     };
 }
