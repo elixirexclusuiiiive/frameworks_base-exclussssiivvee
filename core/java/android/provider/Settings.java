@@ -5791,6 +5791,11 @@ public final class Settings {
         };
 
         /**
+         * @hide
+         */
+        public static final String ENABLE_TASKBAR = "enable_taskbar";
+
+        /**
          * These are all public system settings
          *
          * @hide
