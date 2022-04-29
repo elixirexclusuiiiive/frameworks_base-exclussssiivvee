@@ -66,9 +66,13 @@ LOCAL_REQUIRED_MODULES := \
     IconPackOutlineAndroidOverlay \
     IconPackOutlineSettingsOverlay \
     IconPackOutlineSystemUIOverlay \
+    IconPackOutlineLauncherOverlay \
+    IconPackOutlineThemePickerOverlay \
     IconPackAcherusAndroidOverlay \
+    IconPackAcherusLauncherOverlay \
     IconPackAcherusSettingsOverlay \
     IconPackAcherusSystemUIOverlay \
+    IconPackAcherusThemePickerOverlay \
     IconPackPUIAndroidOverlay \
     IconPackPUILauncherOverlay \
     IconPackPUISettingsOverlay \
