@@ -11709,6 +11709,14 @@ public final class Settings {
         public static final String LOCK_SCREEN_WEATHER_ENABLED = "lockscreen_weather_enabled";
 
         /**
+         * QSTiles Styles
+         * 
+         * @hide
+         * 
+         */
+        public static final String QS_TILE_STYLE = "qstiles_styles";
+
+        /**
          * Hide icons of Essence preferences
          *
          * @hide
