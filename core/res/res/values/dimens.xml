@@ -1004,6 +1004,9 @@
     <dimen name="secondary_rounded_corner_radius_top_adjustment">0px</dimen>
     <dimen name="secondary_rounded_corner_radius_bottom_adjustment">0px</dimen>
 
+    <dimen name="custom_rounded_slider_track_width">4dp</dimen>
+    <dimen name="custom_qs_tile_bg_radius">16dp</dimen>
+
     <!-- Default size for user icons (a.k.a. avatar images) -->
     <dimen name="user_icon_size">190dp</dimen>
 
