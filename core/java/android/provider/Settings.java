@@ -6099,6 +6099,14 @@ public final class Settings {
         public static final String TOAST_ANIMATION = "toast_animation";
 
         /**
+         * Statusbar clock background
+         * 0 - hide accented chip  (default)
+         * 1 - show accented chip
+         * @hide
+         */
+        public static final String STATUSBAR_CLOCK_CHIP = "statusbar_clock_chip";
+
+        /**
          * @hide
          */
         public static final String QS_HEADER_CUSTOM_IMAGE_URI_ENABLED = "qs_header_custom_image_uri_enabled";
