@@ -94,6 +94,7 @@ LOCAL_REQUIRED_MODULES := \
     NotchBarKillerLeftrOverlay \
     QSTilesClassicOverlay \
     OutlineShapesOverlay \
+    MaybeRectangleOverlay \
     preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)
