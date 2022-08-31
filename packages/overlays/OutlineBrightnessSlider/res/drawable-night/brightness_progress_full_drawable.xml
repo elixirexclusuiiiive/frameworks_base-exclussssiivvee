@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:autoMirrored="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:priv-android="http://schemas.android.com/apk/prv/res/android">
+    <item android:gravity="fill_horizontal|center" android:height="45dp">
+        <shape>
+            <size android:height="48dp" />
+            <solid android:color="#10FFFFFF" />
+            <corners android:radius="@android:dimen/app_icon_size" />
+            <stroke android:width="4.0dip" android:color="@*android:color/accent_device_default_dark" />
+        </shape>
+    </item>
+    <item 
+	    android:gravity="end|center" 
+		android:height="20dp" 
+		android:width="20dp" 
+		android:right="14dp">
+        <com.android.systemui.util.AlphaTintDrawableWrapper 
+			android:drawable="@drawable/ic_brightness"
+		    android:tint="?android:attr/textColorPrimary" 
+		/>
+    </item>
+</layer-list>

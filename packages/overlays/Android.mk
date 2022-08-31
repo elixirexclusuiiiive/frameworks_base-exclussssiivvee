@@ -95,6 +95,7 @@ LOCAL_REQUIRED_MODULES := \
     QSTilesClassicOverlay \
     OutlineShapesOverlay \
     MaybeRectangleOverlay \
+    OutlineBrightnessOverlay \
     preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)

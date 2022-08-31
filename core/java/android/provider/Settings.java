@@ -11709,6 +11709,14 @@ public final class Settings {
         public static final String LOCK_SCREEN_WEATHER_ENABLED = "lockscreen_weather_enabled";
 
         /**
+         * Brightness Slider Styles
+         * 
+         * @hide
+         * 
+         */
+        public static final String BRIGHTNESS_SLIDER_STYLE = "brightness_slider_style";
+
+        /**
          * QSTiles Styles
          * 
          * @hide
