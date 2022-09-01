@@ -20,7 +20,7 @@
     android:versionCode="1"
     android:versionName="1.0">
 <overlay
-        android:targetPackage="android"
+        android:targetPackage="com.android.systemui"
         android:category="android.theme.customization.adaptive_icon_shape"
         android:priority="1"/>
 
