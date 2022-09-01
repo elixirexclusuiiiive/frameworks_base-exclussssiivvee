@@ -21,4 +21,6 @@
     <!-- QS Tile Ripple Color -->
     <color name="qs_translucent_bg">#59FFFFFF</color>
 
+    <color name="qs_brightness_icon_tint">@*android:color/text_color_primary_device_default_light</color>
+
 </resources>

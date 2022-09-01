@@ -46,7 +46,7 @@
             android:layout_marginStart="20.0dip"
             android:background="@drawable/brightness_bg"
             android:src="@drawable/ic_qs_brightness_auto_off"
-            android:tint="?android:attr/textColorPrimaryInverse"
+            android:tint="@color/qs_brightness_icon_tint"
             android:contentDescription="@null"
             android:visibility="gone"
         />
