@@ -5,7 +5,7 @@
         <shape>
             <size android:height="48dp" />
             <corners android:radius="@android:dimen/app_icon_size" />
-            <solid android:color="#0f000000" />
+            <solid android:color="#00000000" />
         </shape>
     </item>
     <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">

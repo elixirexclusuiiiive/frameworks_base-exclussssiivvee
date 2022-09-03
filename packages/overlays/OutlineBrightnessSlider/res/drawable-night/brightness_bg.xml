@@ -17,7 +17,7 @@
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="24dp" />
-    <solid android:color="#10ffffff" />
+    <solid android:color="#00ffffff" />
     <size android:width="48dp" android:height="48dp" />
 	<stroke android:width="4.0dip" android:color="?android:attr/colorAccent" />
 </shape>
