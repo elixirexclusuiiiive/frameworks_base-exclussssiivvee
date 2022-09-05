@@ -26,6 +26,12 @@ import dagger.multibindings.StringKey
 @Module
 interface CustomQSModule {
 
+    /** Inject AntiFlickerTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(AntiFlickerTile.TILE_SPEC)
+    fun bindAntiFlickerTile(antiFlickerTile: AntiFlickerTile): QSTileImpl<*>
+
     /** Inject AODTile into tileMap in QSModule */
     @Binds
     @IntoMap
