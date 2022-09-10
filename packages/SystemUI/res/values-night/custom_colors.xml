@@ -24,6 +24,6 @@
     <color name="qs_brightness_icon_tint">@*android:color/text_color_primary_device_default_light</color>
 
     <!-- reTicker -->
-    <color name="reticker_background_color">@android:color/system_neutral1_900</color>
+    <color name="reticker_background_color">@android:color/system_neutral1_800</color>
 
 </resources>
