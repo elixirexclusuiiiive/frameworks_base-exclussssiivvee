@@ -910,7 +910,8 @@ public final class BatteryService extends SystemService {
 
     private boolean isVoocCharger() {
         try {
-            FileReader file = new FileReader("/sys/class/power_supply/battery/voocchg_ing");
+            String path = mContext.getString(com.android.internal.R.string.config_SuperDartAndVoocCharger_path);
+            FileReader file = new FileReader(path);
             BufferedReader br = new BufferedReader(file);
             String state = br.readLine();
             br.close();

@@ -61,4 +61,7 @@
     <!-- Face unlock -->
     <string name="face_unlock_disabled_idle">Face unlock disabled due to inactivity</string>
 
+    <!-- Path of node of SuperDart charging -->
+    <string name="config_SuperDartAndVoocCharger_path">/sys/class/power_supply/battery/voocchg_ing</string>
+
 </resources>

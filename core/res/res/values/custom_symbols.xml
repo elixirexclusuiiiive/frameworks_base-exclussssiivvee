@@ -101,6 +101,9 @@
     <!-- Whether device has SuperDart charging support -->
     <java-symbol type="bool" name="config_hasSuperDartCharger" />
 
+    <!-- Path of node of SuperDart charging -->
+    <java-symbol type="string" name="config_SuperDartAndVoocCharger_path" />
+
     <!-- Whether device supports in-display fingerprint when screen is off -->
     <java-symbol type="bool" name="config_supportsScreenOffUdfps" />
 
