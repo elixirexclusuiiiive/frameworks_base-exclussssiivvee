@@ -7958,6 +7958,21 @@ public final class Settings {
                 "lock_screen_allow_remote_input";
 
         /**
+         * Whether to use custom clock
+         * Values should be Int, 0 = disabled, 1=custom clock
+         * @hide
+         */
+        @Readable
+        public static final String LOCK_SCREEN_CUSTOM_CLOCK = "lock_screen_custom_clock";
+
+        /**
+         * Whether to use custom clock
+         * @hide
+         */
+        @Readable
+        public static final String LOCK_SCREEN_CUSTOM_CLOCK_STYLES = "lock_screen_custom_clock_styles";
+
+        /**
          * Indicates which clock face to show on lock screen and AOD formatted as a serialized
          * {@link org.json.JSONObject} with the format:
          *     {"clock": id, "_applied_timestamp": timestamp}
@@ -11760,6 +11775,14 @@ public final class Settings {
          * @hide
          */
         public static final String HIDE_ESSENCE_ICONS = "hide_essence_icons";
+
+        /**
+         * Allow some exclusive features to donate users
+         *
+         * @hide
+         */
+        @Readable
+        public static final String ELIXIR_EXCLUSIVE_BUILD = "elixir_exclusive_build";
 
         /**
          * Control whether FLAG_SECURE is ignored for all windows.

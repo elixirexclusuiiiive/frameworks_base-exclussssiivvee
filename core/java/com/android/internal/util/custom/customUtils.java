@@ -18,6 +18,7 @@ package com.android.internal.util.custom;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
@@ -35,6 +36,7 @@ import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.text.format.Time;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -58,6 +60,8 @@ import com.android.internal.statusbar.IStatusBarService;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+
+import static android.provider.Settings.Secure.ELIXIR_EXCLUSIVE_BUILD;
 
 public class customUtils {
 
@@ -379,6 +383,14 @@ public static boolean deviceHasFlashlight(Context ctx) {
         }
 
         return list;
+    }
+    
+    public static void setExclusive(ContentResolver resolver, int value) {
+        Settings.Secure.putInt(resolver, ELIXIR_EXCLUSIVE_BUILD, value);
+    }
+
+    public static int getExclusive(ContentResolver resolver) {
+        return Settings.Secure.getInt(resolver, ELIXIR_EXCLUSIVE_BUILD, 0);
     }
 
 }

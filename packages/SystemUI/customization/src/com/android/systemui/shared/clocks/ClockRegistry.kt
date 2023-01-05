@@ -152,6 +152,7 @@ open class ClockRegistry(
                     json
                 )
             }
+            Log.i(TAG, "Set current clock :- " + json.toString())
         } catch (ex: Exception) {
             Log.e(TAG, "Failed to set clock settings", ex)
         }
@@ -199,7 +200,7 @@ open class ClockRegistry(
     }
 
     fun registerListeners() {
-        if (!isEnabled || isRegistered) {
+        if (isRegistered) {
             return
         }
 
@@ -301,9 +302,6 @@ open class ClockRegistry(
     }
 
     fun getClocks(): List<ClockMetadata> {
-        if (!isEnabled) {
-            return listOf(availableClocks[DEFAULT_CLOCK_ID]!!.metadata)
-        }
         return availableClocks.map { (_, clock) -> clock.metadata }
     }
 
@@ -320,7 +318,13 @@ open class ClockRegistry(
 
     fun createCurrentClock(): ClockController {
         val clockId = currentClockId
-        if (isEnabled && clockId.isNotEmpty()) {
+        Log.i(TAG, "currentId := " + clockId.toString())
+        val isForceCustomClock = Settings.Secure.getInt(context.contentResolver,Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK, 0) != 0;
+        if (isForceCustomClock) {
+            Log.i(TAG, "Custom clock provider enabled")
+            return createClock(CUSTOM_CLOCK_ID)!!
+        } else {
+            Log.i(TAG, "Creating default clock provider")
             val clock = createClock(clockId)
             if (clock != null) {
                 if (DEBUG) {
@@ -330,8 +334,8 @@ open class ClockRegistry(
             } else {
                 Log.e(TAG, "Clock $clockId not found; using default")
             }
+            return createClock(DEFAULT_CLOCK_ID)!!
         }
-
         return createClock(DEFAULT_CLOCK_ID)!!
     }
 

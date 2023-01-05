@@ -27,6 +27,8 @@ import com.android.systemui.plugins.ClockSettings
 private val TAG = DefaultClockProvider::class.simpleName
 const val DEFAULT_CLOCK_NAME = "Default Clock"
 const val DEFAULT_CLOCK_ID = "DEFAULT"
+const val CUSTOM_CLOCK_NAME = "Custom Clock"
+const val CUSTOM_CLOCK_ID = "CUSTOM"
 
 /** Provides the default system clock */
 class DefaultClockProvider constructor(
@@ -35,20 +37,18 @@ class DefaultClockProvider constructor(
     val resources: Resources
 ) : ClockProvider {
     override fun getClocks(): List<ClockMetadata> =
-        listOf(ClockMetadata(DEFAULT_CLOCK_ID, DEFAULT_CLOCK_NAME))
+        listOf(ClockMetadata(DEFAULT_CLOCK_ID, DEFAULT_CLOCK_NAME)) + listOf(ClockMetadata(CUSTOM_CLOCK_ID, CUSTOM_CLOCK_NAME))
 
     override fun createClock(settings: ClockSettings): ClockController {
-        if (settings.clockId != DEFAULT_CLOCK_ID) {
-            throw IllegalArgumentException("${settings.clockId} is unsupported by $TAG")
+        if (settings.clockId == DEFAULT_CLOCK_ID) {
+            return DefaultClockController(ctx, layoutInflater, resources, settings)
+        } else {
+            return CustomClockController(ctx, layoutInflater, resources, settings)
         }
-
         return DefaultClockController(ctx, layoutInflater, resources, settings)
     }
 
     override fun getClockThumbnail(id: ClockId): Drawable? {
-        if (id != DEFAULT_CLOCK_ID) {
-            throw IllegalArgumentException("$id is unsupported by $TAG")
-        }
 
         // TODO: Update placeholder to actual resource
         return resources.getDrawable(R.drawable.clock_default_thumbnail, null)
