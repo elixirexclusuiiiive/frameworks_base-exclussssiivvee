@@ -263,4 +263,7 @@
     <java-symbol type="style" name="GlobalActionsAnimationCard" />
     <java-symbol type="style" name="GlobalActionsAnimationRotate" />
 
+    <!-- Whether device supports in-display fingerprint -->
+    <java-symbol type="bool" name="config_supportsUdfps" />
+
 </resources>
