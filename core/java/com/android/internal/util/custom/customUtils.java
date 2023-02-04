@@ -62,6 +62,7 @@ import java.util.List;
 import java.util.Locale;
 
 import static android.provider.Settings.Secure.ELIXIR_EXCLUSIVE_BUILD;
+import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
 
 public class customUtils {
 
@@ -387,6 +388,9 @@ public static boolean deviceHasFlashlight(Context ctx) {
     
     public static void setExclusive(ContentResolver resolver, int value) {
         Settings.Secure.putInt(resolver, ELIXIR_EXCLUSIVE_BUILD, value);
+        if (value == 0) {
+            Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, 0);
+        }
     }
 
     public static int getExclusive(ContentResolver resolver) {
