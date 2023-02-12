@@ -162,4 +162,7 @@
     <string-array name="device_configs_override" translatable="false">
     </string-array>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">false</bool>
+
 </resources>
