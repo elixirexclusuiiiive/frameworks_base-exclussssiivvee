@@ -106,4 +106,13 @@
     <dimen name="status_bar_battery_icon_width_landscape_origami">20.0dip</dimen>
     <dimen name="status_bar_battery_icon_width_landscape_miui_pill">24.0dip</dimen>
 
+    <!-- QS Header height full -->
+    <dimen name="qs_header_height_full">200dp</dimen>
+
+    <!-- QS header image -->
+    <dimen name="qs_header_image_side_margin">0dp</dimen>
+    <dimen name="qs_header_image_top_margin">0dp</dimen>
+    <dimen name="qs_header_image_bottom_margin">0dp</dimen>
+    <dimen name="qs_header_image_min_height">50dp</dimen>
+
 </resources>
