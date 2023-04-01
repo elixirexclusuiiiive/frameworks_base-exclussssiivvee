@@ -98,5 +98,6 @@ public class SystemSettings {
         Settings.System.EDGE_LIGHT_CUSTOM_COLOR,
         Settings.System.NETWORK_TRAFFIC_STATE,
         Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD,
+        Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
     };
 }
