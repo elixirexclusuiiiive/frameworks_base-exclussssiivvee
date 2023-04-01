@@ -100,5 +100,6 @@ public class SystemSettings {
         Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD,
         Settings.System.QS_PANEL_STYLE,
         Settings.System.KEYGUARD_QUICK_TOGGLES_NEW,
+        Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
     };
 }
