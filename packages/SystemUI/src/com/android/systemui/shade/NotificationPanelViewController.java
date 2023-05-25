@@ -573,7 +573,6 @@ public final class NotificationPanelViewController implements Dumpable {
     private final NPVCDownEventState.Buffer mLastDownEvents;
 
     /*Reticker*/
-    private final String[] mAppExceptions;
     private LinearLayout mReTickerComeback;
     private ImageView mReTickerComebackIcon;
     private TextView mReTickerContentTV;
@@ -979,7 +978,6 @@ public final class NotificationPanelViewController implements Dumpable {
                 },
                 mFalsingManager);
         onFinishInflate();
-        mAppExceptions = mResources.getStringArray(R.array.app_exceptions);
         keyguardUnlockAnimationController.addKeyguardUnlockAnimationListener(
                 new KeyguardUnlockAnimationController.KeyguardUnlockAnimationListener() {
                     @Override
@@ -5272,37 +5270,23 @@ public final class NotificationPanelViewController implements Dumpable {
             String pkgname = sbn.getPackageName();
             Drawable icon = null;
             try {
-                if (pkgname.equals("com.android.systemui")) {
+                if ("com.android.systemui".equals(pkgname)) {
                     icon = mView.getContext().getDrawable(notification.icon);
                 } else {
                     icon = mView.getContext().getPackageManager().getApplicationIcon(pkgname);
                 }
             } catch (NameNotFoundException e) {
-                return;
             }
+
             String content = notification.extras.getString("android.text");
             if (TextUtils.isEmpty(content)) return;
+
             reTickerContent = content;
             String reTickerAppName = notification.extras.getString("android.title");
             PendingIntent reTickerIntent = notification.contentIntent;
             String mergedContentText = reTickerAppName + " " + reTickerContent;
             mReTickerComebackIcon.setImageDrawable(icon);
-            Drawable dw = mView.getContext().getDrawable(R.drawable.reticker_background);
-            if (mReTickerColored) {
-                int col = notification.color;
-                // check if we need to override the color
-                if ((mAppExceptions.length & 1) == 0) {
-                    for (int i = 0; i < mAppExceptions.length; i += 2) {
-                        if (mAppExceptions[i].equals(pkgname)) {
-                            col = Color.parseColor(mAppExceptions[i + 1]);
-                            break;
-                        }
-                    }
-                }
-                dw.setTint(col);
-            } else {
-                dw.setTintList(null);
-            }
+            Drawable dw = getRetickerBackgroundDrawable(pkgname, notification.color);
             mReTickerComeback.setBackground(dw);
             mReTickerContentTV.setText(mergedContentText);
             mReTickerContentTV.setTextAppearance(mView.getContext(), R.style.TextAppearance_Notifications_reTicker);
@@ -5317,7 +5301,7 @@ public final class NotificationPanelViewController implements Dumpable {
                         } catch (PendingIntent.CanceledException e) {
                         }
                     }
-                    RetickerAnimations.doBounceAnimationOut(mReTickerComeback, mNotificationStackScroller);
+                    reTickerDismissal();
                     reTickerViewVisibility();
                 });
             }
@@ -5343,6 +5327,24 @@ public final class NotificationPanelViewController implements Dumpable {
     public void reTickerDismissal() {
         RetickerAnimations.doBounceAnimationOut(mReTickerComeback, mNotificationStackScroller);
         mReTickerComeback.getViewTreeObserver().removeOnComputeInternalInsetsListener(mInsetsListener);
+    }
+
+    private Drawable getRetickerBackgroundDrawable(String pkgname, int notificationColor) {
+        Drawable dw = mView.getContext().getDrawable(R.drawable.reticker_background);
+        if (mReTickerColored) {
+            int col;
+
+            try {
+                col = Color.parseColor(pkgname);
+            } catch (Exception e) {
+                col = notificationColor;
+            }
+
+            dw.setTint(col);
+        } else {
+            dw.setTintList(null);
+        }
+        return dw;
     }
 
     private final OnComputeInternalInsetsListener mInsetsListener = internalInsetsInfo -> {
