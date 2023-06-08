@@ -34,6 +34,7 @@ public class PixelPropsUtils {
 
     private static final String TAG = "PixelPropsUtils";
     private static final boolean DEBUG = true;
+    private static final boolean DEBUG_KEYS = false;
     private static final boolean DEBUG_PACKAGES = false;
 
     // Packages to Spoof as Pixel 7 Pro
@@ -172,7 +173,7 @@ public class PixelPropsUtils {
 
     static void setPropValue(String key, Object value) {
         try {
-            dlog("Setting prop " + key + " to " + value.toString());
+            keylog("Setting prop " + key + " to " + value.toString());
             Field field = Build.class.getDeclaredField(key);
             field.setAccessible(true);
             field.set(null, value);
@@ -206,5 +207,9 @@ public class PixelPropsUtils {
 
     static void dlog(String msg) {
       if (DEBUG) Log.d(TAG, msg);
+    }
+
+    private static void keylog(String msg) {
+        if (DEBUG_KEYS) Log.d(TAG, msg);
     }
 }
