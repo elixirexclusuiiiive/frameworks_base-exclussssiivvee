@@ -2503,12 +2503,12 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         if (mTorchActionMode == 2 && longpress) {
             performHapticFeedback(HapticFeedbackConstants.LONG_PRESS, false,
                     "Power - Long Press - Torch");
-            SuperiorUtils.toggleCameraFlash();
+            customUtils.toggleCameraFlash();
             return true;
         } else if (mTorchActionMode == 1 && !longpress) {
             performHapticFeedback(HapticFeedbackConstants.LONG_PRESS, false,
                       "Power - Double Press - Torch");
-            SuperiorUtils.toggleCameraFlash();
+            customUtils.toggleCameraFlash();
             return true;
         }
         return false;
