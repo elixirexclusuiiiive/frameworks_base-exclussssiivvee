@@ -6001,11 +6001,8 @@ public final class Settings {
             PRIVATE_SETTINGS.add(VIBRATE_ON_DISCONNECT);
             PRIVATE_SETTINGS.add(HEADSET_CONNECT_PLAYER);
             PRIVATE_SETTINGS.add(HIGH_TOUCH_POLLING_RATE_ENABLE);
-<<<<<<< HEAD
             PRIVATE_SETTINGS.add(HIGH_TOUCH_SENSITIVITY_ENABLE);
-=======
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
->>>>>>> d1065070952f... core: Introduce pocket judge [1/2]
         }
 
         /**
