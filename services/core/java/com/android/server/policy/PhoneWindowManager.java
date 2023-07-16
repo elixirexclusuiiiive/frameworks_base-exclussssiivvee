@@ -229,7 +229,7 @@ import com.android.server.wm.WindowManagerService;
 
 import dalvik.system.PathClassLoader;
 
-import com.android.internal.util.superior.SuperiorUtils;
+import com.android.internal.util.custom.customUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
