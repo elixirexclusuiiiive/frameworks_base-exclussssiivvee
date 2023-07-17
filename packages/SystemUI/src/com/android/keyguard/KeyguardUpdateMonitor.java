@@ -4156,6 +4156,7 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener, Dumpab
     private void updateSettings() {
         ContentResolver resolver = mContext.getContentResolver();
         updateFingerprintSettings();
+	updateFaceUnlockBehavior();
     }
 
     private void updateFingerprintSettings() {
@@ -4172,10 +4173,6 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener, Dumpab
                     Settings.System.FINGERPRINT_WAKE_UNLOCK,
                     2, UserHandle.USER_CURRENT);
         }
-    }
-
-    private void updateSettings() {
-        updateFaceUnlockBehavior();
     }
 
     private void updateFaceUnlockBehavior() {
