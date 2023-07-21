@@ -40,7 +40,7 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.asynclayoutinflater.view.AsyncLayoutInflater;
 
-import com.android.internal.util.derp.derpUtils;
+import com.android.internal.util.custom.customUtils;
 import com.android.settingslib.Utils;
 import com.android.systemui.R;
 import com.android.systemui.animation.Interpolators;
@@ -95,8 +95,8 @@ public class UdfpsKeyguardView extends UdfpsAnimationView {
         mMaxBurnInOffsetY = context.getResources()
             .getDimensionPixelSize(R.dimen.udfps_burn_in_offset_y);
 
-        mPackageInstalled = com.android.internal.util.derp.derpUtils.isPackageInstalled(
-                mContext, "org.derp.udfps.resources");
+        mPackageInstalled = com.android.internal.util.custom.customUtils.isPackageInstalled(
+                mContext, "org.custom.udfps.resources");
     }
 
     @Override

@@ -66,7 +66,7 @@ import androidx.annotation.Nullable;
 
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.util.LatencyTracker;
-import com.android.internal.util.derp.derpUtils;
+import com.android.internal.util.custom.customUtils;
 import com.android.keyguard.FaceAuthApiRequestReason;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.systemui.Dumpable;
@@ -843,7 +843,7 @@ public class UdfpsController implements DozeReceiver, Dumpable {
                 }
             }
         );
-        if (derpUtils.isPackageInstalled(mContext, "org.derp.udfps.resources")) {
+        if (customUtils.isPackageInstalled(mContext, "org.custom.udfps.resources")) {
             mUdfpsAnimation = new UdfpsAnimation(mContext, mWindowManager, mSensorProps);
         }
     }
