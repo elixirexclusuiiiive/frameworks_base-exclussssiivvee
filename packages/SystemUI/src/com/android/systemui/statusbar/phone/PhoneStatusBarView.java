@@ -68,8 +68,6 @@ public class PhoneStatusBarView extends FrameLayout {
      */
     private int mCutoutSideNudge = 0;
 
-    private boolean mBrightnessControlEnabled;
-
     public PhoneStatusBarView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContentInsetsProvider = Dependency.get(StatusBarContentInsetsProvider.class);
@@ -195,14 +193,6 @@ public class PhoneStatusBarView extends FrameLayout {
     public boolean onInterceptTouchEvent(MotionEvent event) {
         mTouchEventHandler.onInterceptTouchEvent(event);
         return super.onInterceptTouchEvent(event);
-    }
-
-    public boolean getBrightnessControlEnabled() {
-        return mBrightnessControlEnabled;
-    }
-
-    public void setBrightnessControlEnabled(boolean enabled) {
-        mBrightnessControlEnabled = enabled;
     }
 
     public void updateResources() {

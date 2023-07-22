@@ -5918,13 +5918,6 @@ public final class Settings {
         public static final String UDFPS_ICON = "udfps_icon";
 
         /**
-         * Whether to enable statusbar brightness control
-         * @hide
-         */
-        @Readable
-        public static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
-
-        /**
          * Give haptic feedback on brightness slider changes.
          * @hide
          */
