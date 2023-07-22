@@ -32,7 +32,7 @@ import android.util.PathParser;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.android.internal.util.derp.derpUtils;
+import com.android.internal.util.custom.customUtils;
 import com.android.systemui.Dependency;
 import com.android.systemui.R;
 import com.android.systemui.tuner.TunerService;
@@ -75,7 +75,7 @@ public abstract class UdfpsDrawable extends Drawable {
     }
 
     void init() {
-        if (derpUtils.isPackageInstalled(mContext, udfpsResourcesPackage)) {
+        if (customUtils.isPackageInstalled(mContext, udfpsResourcesPackage)) {
             try {
                 PackageManager pm = mContext.getPackageManager();
                 udfpsRes = pm.getResourcesForApplication(udfpsResourcesPackage);
