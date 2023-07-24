@@ -96,6 +96,16 @@ LOCAL_REQUIRED_MODULES := \
     OutlineShapesOverlay \
     MaybeRectangleOverlay \
     OutlineBrightnessOverlay \
+    LSClockOOSNothing  \
+    LSClockNothing \
+    LSClockBSyra \
+    LSClockMonet \
+    LSClockHyperBox \
+    LSClockHyperBox2 \
+    LSClockHyperCode \
+    LSClockOOSAlike \
+    LSClockAnalog \
+    LSClockMinimal1 \
     preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.android.systemui.shared.clocks.ClockLayout 
+xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+xmlns:app="http://schemas.android.com/apk/res-auto" 
+xmlns:aapt="http://schemas.android.com/aapt" 
+android:layout_gravity="center_vertical|center_horizontal" 
+android:layout_width="match_parent" 
+android:paddingBottom="130dp"
+android:layout_height="match_parent">
+
+<LinearLayout 
+    android:gravity="center_vertical|center_horizontal" 
+	android:layout_gravity="center_vertical|center_horizontal" 
+	android:orientation="vertical"
+    android:layout_marginStart="10dp" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="###############" />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="AN EXCEPTION HAS OCCURED " />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="DATABASE CORRUPTED! " />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="ELIXIR•REI AI HAS STOPPED RESPONDING " />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="RESTARTING THE A.I " />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="PROGRAM RESTARTED SUCCESFULLY... " />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="HELLO; ELIXIR•REI USER " />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="LOADING DATA........." />
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="###############" />
+
+    <LinearLayout 
+	    android:gravity="start" 
+		android:layout_gravity="start"
+        android:orientation="horizontal" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="TIME:?:: " />
+
+    <TextClock 
+	    android:textSize="20.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:format12Hour="hh : mm"
+        android:format24Hour="kk : mm" />
+    </LinearLayout>
+
+    <LinearLayout 
+	    android:gravity="start" 
+		android:layout_gravity="start"
+        android:orientation="horizontal" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+
+    <TextView 
+	    android:textSize="15.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:text="PROCESS COMPLETED ON:; " />
+
+    <TextClock 
+	    android:textSize="20.0sp" 
+		android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:fontFamily="@font/EvolveSans" 
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:format12Hour="dd•MMMM•yyyy"
+        android:format24Hour="dd•MMMM•yyyy" />
+
+    </LinearLayout>
+</LinearLayout>
+</com.android.systemui.shared.clocks.ClockLayout>

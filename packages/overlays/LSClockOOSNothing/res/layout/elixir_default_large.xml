@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.android.systemui.shared.clocks.ClockLayout 
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:aapt="http://schemas.android.com/aapt" 
+    android:layout_gravity="center_vertical|center_horizontal" 
+    android:layout_width="match_parent" 
+    android:paddingBottom="130dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:gravity="center" 
+    android:layout_gravity="center" 
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+
+    <LinearLayout 
+        android:gravity="start" 
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextClock 
+            android:textSize="45.0sp"
+            android:fontFamily="@font/nothin"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" 
+            android:format12Hour="EEEE"
+            android:format24Hour="EEEE" />
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:gravity="start"
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" >
+
+        <TextClock 
+            android:textSize="45.0sp"
+            android:fontFamily="@font/nothin"
+            android:textColor="#F50514" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="h"
+            android:format24Hour="k"  />
+
+        <TextView 
+            android:textSize="45.0sp"
+            android:fontFamily="@font/nothin"
+            android:textColor="@android:color/white" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":" />
+
+        <TextClock 
+            android:textSize="45.0sp"
+            android:fontFamily="@font/nothin"
+            android:textColor="@android:color/white" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:format12Hour="mm"
+            android:format24Hour="mm" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</com.android.systemui.shared.clocks.ClockLayout>

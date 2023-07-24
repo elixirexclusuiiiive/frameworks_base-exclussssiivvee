@@ -7958,6 +7958,14 @@ public final class Settings {
                 "lock_screen_allow_remote_input";
 
         /**
+         * Whether to hide mDateView from smartspace
+         * Values should be Int, 0 = show, 1=hide
+         * @hide
+         */
+        @Readable
+        public static final String LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE = "lock_screen_custom_clock_hide_date";
+
+        /**
          * Whether to use custom clock
          * Values should be Int, 0 = disabled, 1=custom clock
          * @hide
