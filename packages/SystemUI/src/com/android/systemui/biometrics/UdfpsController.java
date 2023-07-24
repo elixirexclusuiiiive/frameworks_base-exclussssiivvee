@@ -845,7 +845,7 @@ public class UdfpsController implements DozeReceiver, Dumpable {
                 }
             }
         );
-        if (customUtils.isPackageInstalled(mContext, "org.custom.udfps.resources")) {
+        if (customUtils.isPackageInstalled(mContext, "com.custom.udfps.resources")) {
             mUdfpsAnimation = new UdfpsAnimation(mContext, mWindowManager, mSensorProps);
         }
     }

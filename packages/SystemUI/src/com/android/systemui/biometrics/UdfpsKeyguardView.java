@@ -92,7 +92,7 @@ public class UdfpsKeyguardView extends UdfpsAnimationView {
             .getDimensionPixelSize(R.dimen.udfps_burn_in_offset_y);
 
         mPackageInstalled = com.android.internal.util.custom.customUtils.isPackageInstalled(
-                mContext, "org.custom.udfps.resources");
+                mContext, "com.custom.udfps.resources");
     }
 
     @Override
