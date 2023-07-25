@@ -88,8 +88,6 @@ public class ThemeOverlayApplier implements Dumpable {
 
     static final String CUSTOM_THEME_BLACK = "com.android.system.theme.black";
 
-    static final String CUSTOM_THEME_CLEAR = "com.android.system.theme.clear";
-
     static final String CUSTOM_THEME_VIVID = "com.android.system.monet.vivid";
 
     static final String CUSTOM_THEME_SNOWPAINT = "com.android.system.monet.snowpaintdrop";
@@ -155,7 +153,6 @@ public class ThemeOverlayApplier implements Dumpable {
     static final List<String> CUSTOM_THEME_CATEGORIES = Lists.newArrayList(
             "",
             CUSTOM_THEME_BLACK,
-            CUSTOM_THEME_CLEAR,
             CUSTOM_THEME_VIVID,
             CUSTOM_THEME_SNOWPAINT,
             CUSTOM_THEME_ESPRESSO);
