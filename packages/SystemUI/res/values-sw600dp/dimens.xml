@@ -87,4 +87,6 @@
 
     <dimen name="controls_header_horizontal_padding">12dp</dimen>
     <dimen name="controls_content_margin_horizontal">24dp</dimen>
+    
+    <dimen name="qs_header_side_offsets">-100dp</dimen>
 </resources>
