@@ -39,19 +39,14 @@ public class PixelPropsUtils {
 
     // Packages to Spoof as Pixel 7 Pro
     private static final String[] sPixel7ProPackages = {
-        "com.google.android.apps.googleassistant",
-        "com.google.android.apps.nbu.files",
-        "com.google.android.apps.podcasts",
-        "com.google.android.apps.privacy.wildlife",
         "com.google.android.apps.subscriptions.red",
-        "com.google.android.apps.tachyon",
-        "com.google.android.apps.wallpaper",
-        "com.google.android.contacts",
-        "com.google.android.deskclock",
+        "com.google.android.apps.turbo",
+        "com.google.android.googlequicksearchbox",
         "com.google.android.inputmethod.latin",
+        "com.google.android.setupwizard",
+        "com.google.android.apps.emojiwallpaper",
+        "com.google.android.wallpaper.effects",
         "com.amazon.avod.thirdpartyclient",
-        "com.android.chrome",
-        "com.android.vending",
         "com.breel.wallpapers20",
         "com.disney.disneyplus",
         "com.microsoft.android.smsorganizer",
@@ -59,7 +54,7 @@ public class PixelPropsUtils {
         "com.nhs.online.nhsonline",
         "com.nothing.smartcenter",
         "in.startv.hotstar"
-};
+    };
 
     private static final Map<String, Object> sPixelProps = Map.of(
         "BRAND", "google",
