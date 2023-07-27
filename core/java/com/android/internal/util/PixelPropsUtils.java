@@ -88,7 +88,6 @@ public class PixelPropsUtils {
     );
 
     private static final Map<String, Object> sPixelXLSFProps = Map.of(
-        "DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.N_MR1,
         "DEVICE", "marlin",
         "PRODUCT", "marlin",
         "MODEL", "Pixel XL",
