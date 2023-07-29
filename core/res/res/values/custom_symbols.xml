@@ -141,15 +141,6 @@
     <java-symbol type="array" name="config_displayModeMappings" />
     <java-symbol type="bool" name="config_defaultAntiFlicker" />
 
-    <!-- Pocket Lock -->
-    <java-symbol type="layout" name="pocket_lock_view" />
-    <java-symbol type="bool" name="config_pocketModeSupported" />
-
-    <!-- Pocket bridge -->
-    <java-symbol type="string" name="config_pocketBridgeSysfsInpocket" />
-    <!-- Pocket Service -->
-    <java-symbol type="string" name="config_pocketJudgeVendorSensorName" />
-
     <!-- PowerOffAlarmService -->
     <java-symbol type="string" name="notification_channel_poweroff_alarm" />
     <java-symbol type="string" name="poweroff_alarm_title" />
