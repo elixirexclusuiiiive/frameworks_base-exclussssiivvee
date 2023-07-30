@@ -6045,12 +6045,6 @@ public final class Settings {
         public static final String FULLSCREEN_GESTURES = "fullscreen_gestures";
 
         /**
-         * QS Header
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE = "qs_header_image";
-
-        /**
          * Whether allowing pocket service to register sensors and dispatch informations.
          *   0 = disabled
          *   1 = enabled

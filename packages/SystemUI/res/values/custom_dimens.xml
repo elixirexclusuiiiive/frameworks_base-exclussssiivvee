@@ -106,6 +106,4 @@
     <!-- Maximum vertical offset of statusbar for burn-in protection -->
     <dimen name="status_bar_offset_max_y">4dp</dimen>
 
-    <!-- QS Header height full -->
-    <dimen name="qs_header_height_full">200dp</dimen>
 </resources>
