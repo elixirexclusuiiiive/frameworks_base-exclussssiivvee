@@ -56,6 +56,12 @@ public class PixelPropsUtils {
         "in.startv.hotstar"
     };
 
+    // Packages to Spoof Samsung S23   
+    private static final String[] sS23Packages = {
+        "com.google.android.youtube",
+        "com.google.android.apps.youtube.music"
+    };
+
     private static final Map<String, Object> sPixelProps = Map.of(
         "BRAND", "google",
         "MANUFACTURER", "Google",
@@ -63,6 +69,14 @@ public class PixelPropsUtils {
         "PRODUCT", "redfin",
         "MODEL", "Pixel 5",
         "FINGERPRINT", "google/redfin/redfin:13/TQ3A.230705.001/10216780:user/release-keys"
+    );
+
+    private static final Map<String, Object> sS23Props = Map.of(
+        "BRAND", "samsung",
+        "MANUFACTURER", "samsung",
+        "DEVICE", "dm1q",
+        "MODEL", "SM-S911B",
+        "FINGERPRINT", "samsung/dm1qxxx/dm1q:13/TP1A.220624.014/S911BXXS3AWF7:user/release-keys"
     );
 
     private static final Map<String, Object> sPixel7Props = Map.of(
@@ -98,9 +112,7 @@ public class PixelPropsUtils {
     private static final List<String> sPackageWhitelist = List.of(
         "com.google.android.dialer",
         "com.google.android.euicc",
-        "com.google.android.youtube",
         "com.google.android.apps.youtube.kids",
-        "com.google.android.apps.youtube.music",
         "com.google.android.apps.recorder",
         "com.google.android.apps.wearables.maestro.companion",
         "com.google.android.settings.intelligence"
@@ -158,6 +170,9 @@ public class PixelPropsUtils {
         } else if ((Arrays.asList(sPixel7ProPackages).contains(packageName))) {
             dlog("Spoofing Pixel 7 Pro for :- " + packageName);
             sPixel7Props.forEach(PixelPropsUtils::setPropValue);
+        } else if ((Arrays.asList(sS23Packages).contains(packageName))) {
+            dlog("Spoofing Samsung S23 for :- " + packageName);
+            sS23Props.forEach(PixelPropsUtils::setPropValue);
         } else if ((packageName.startsWith(PACKAGE_PREFIX_GOOGLE)
                 && !packageName.toLowerCase().contains("camera"))
                 || sExtraPackages.contains(packageName)) {
