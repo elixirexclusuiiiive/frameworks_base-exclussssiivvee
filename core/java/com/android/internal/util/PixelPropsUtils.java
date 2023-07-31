@@ -156,7 +156,7 @@ public class PixelPropsUtils {
             dlog("Spoofing Pixel XL for Google Photos");
             sPixelXLProps.forEach(PixelPropsUtils::setPropValue);
         } else if ((Arrays.asList(sPixel7ProPackages).contains(packageName))) {
-            dlog("Spoofing Pixel 7 Pro");
+            dlog("Spoofing Pixel 7 Pro for :- " + packageName);
             sPixel7Props.forEach(PixelPropsUtils::setPropValue);
         } else if ((packageName.startsWith(PACKAGE_PREFIX_GOOGLE)
                 && !packageName.toLowerCase().contains("camera"))
