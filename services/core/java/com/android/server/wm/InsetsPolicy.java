@@ -49,6 +49,7 @@ import android.app.WindowConfiguration;
 import android.content.ComponentName;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.util.ArrayMap;
 import android.util.IntArray;
 import android.util.SparseArray;
 import android.view.InsetsAnimationControlCallbacks;
@@ -73,8 +74,6 @@ import com.android.internal.R;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.server.DisplayThread;
 import com.android.server.statusbar.StatusBarManagerInternal;
-
-import java.util.HashMap;
 
 /**
  * Policy that implements who gets control over the windows generating insets.
@@ -381,9 +380,10 @@ class InsetsPolicy {
                 state.removeSource(ITYPE_CAPTION_BAR);
             }
         }
-        HashMap<Integer, WindowContainerInsetsSourceProvider> providers = mStateController
+        ArrayMap<Integer, WindowContainerInsetsSourceProvider> providers = mStateController
                 .getSourceProviders();
-        for (WindowContainerInsetsSourceProvider otherProvider : providers.values()) {
+        for (int i = providers.size() - 1; i >= 0; i--) {
+            WindowContainerInsetsSourceProvider otherProvider = providers.valueAt(i);
             if (otherProvider.overridesFrame(windowType)) {
                 if (!stateCopied) {
                     state = new InsetsState(state);
