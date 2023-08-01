@@ -4203,9 +4203,8 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces, Tune
                 mNotificationInterruptStateProvider.setUseLessBoringHeadsUp(lessBoringHeadsUp);
                 break;
             case QS_TRANSPARENCY:
-	            final Resources res = mContext.getResources();
                 mScrimController.setCustomScrimAlpha(
-                        TunerService.parseInteger(newValue, res.getInteger(com.android.internal.R.integer.config_qs_transparency)));
+                        TunerService.parseInteger(newValue, 85));
                 break;
             default:
                 break;

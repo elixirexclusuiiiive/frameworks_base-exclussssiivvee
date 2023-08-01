@@ -156,7 +156,4 @@
     <string name="config_pocketJudgeVendorSensorName"></string>
     <string name="config_pocketJudgeVendorProximitySensorName"></string>
 
-    <!-- Default value for QS_TRANSPARENCY -->
-    <integer name="config_qs_transparency">85</integer>
-
 </resources>
