@@ -32,12 +32,6 @@ interface CustomQSModule {
     @StringKey(AntiFlickerTile.TILE_SPEC)
     fun bindAntiFlickerTile(antiFlickerTile: AntiFlickerTile): QSTileImpl<*>
 
-    /** Inject AODTile into tileMap in QSModule */
-    @Binds
-    @IntoMap
-    @StringKey(AODTile.TILE_SPEC)
-    fun bindAODTile(aodTile: AODTile): QSTileImpl<*>
-
     /** Inject CaffeineTile into tileMap in QSModule */
     @Binds
     @IntoMap
