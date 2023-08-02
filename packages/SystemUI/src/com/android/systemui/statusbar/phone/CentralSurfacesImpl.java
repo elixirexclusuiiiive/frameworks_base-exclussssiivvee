@@ -4204,7 +4204,7 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces, Tune
                 break;
             case QS_TRANSPARENCY:
                 mScrimController.setCustomScrimAlpha(
-                        TunerService.parseInteger(newValue, 85));
+                        TunerService.parseInteger(newValue, 100));
                 break;
             default:
                 break;
