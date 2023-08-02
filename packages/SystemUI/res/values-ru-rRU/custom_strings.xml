@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the nfc status bar icon. -->
+    <string name="status_bar_nfc">NFC</string>
+    <!-- Accessibility label for nfc icon (not shown on screen) [CHAR LIMIT=NONE] -->
+    <string name="accessibility_status_bar_nfc">Nfc</string>
+    <!-- Screenshot Delete Toast -->
+    <string name="delete_screenshot_toast">Снимок экрана удален</string>
+    <!-- Screenshot delete action -->
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Удалить</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Удалить снимок экрана</string>
+    <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">Использовать Bluetooth</string>
+    <string name="bluetooth_is_off">Bluetooth выключен</string>
+    <string name="tap_a_device_to_connect">Коснитесь устройства для подключения</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин выключен</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Переключить передачу данных</string>
+    <string name="qs_data_switch_toast_0">В настоящее время SIM-карта не установлена</string>
+    <string name="qs_data_switch_toast_1">В настоящее время установлена только одна SIM-карта</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Переключение данных на SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Переключение данных на SIM 2.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB-модем</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Always On Display</string>
+    <!-- Advance location quick setting tile -->
+    <string name="quick_settings_secondary_location_off"></string>
+    <string name="accessibility_quick_settings_location_off">Отчеты о местоположении: отключены.</string>
+    <string name="quick_settings_location_secondary_battery_saving">Экономия заряда батареи</string>
+    <string name="accessibility_quick_settings_location_battery_saving">Отчет о местоположении: режим экономии заряда батареи.</string>
+    <string name="quick_settings_location_secondary_gps_only">Только GPS</string>
+    <string name="accessibility_quick_settings_location_gps_only">Отчет о местоположении: режим только GPS.</string>
+    <string name="quick_settings_location_secondary_high_accuracy">Высокая точность</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">Отчет о местоположении: режим высокой точности.</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Перезапуск</string>
+    <string name="global_action_reboot_more">Дополнительные настройки</string>
+    <string name="global_action_reboot_systemui">Интерфейс</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Рекавери</string>
+    <string name="global_action_reboot_bootloader">Загрузчик</string>
+    <string name="global_action_settings">Настройки</string>
+    <!-- Status bar tuner -->
+    <string name="status_bar_items_title">Значки строки состояния</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_data_saver">Экономия трафика</string>
+    <string name="status_bar_call_strength">Сила сигнала</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">использовано сегодня</string>
+    <string name="usage_data_default_suffix">Данные</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Зарядка Dash (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> до окончания)</string>
+    <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Зарядка Dash</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Зарядка Warp (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> до окончания)</string>
+    <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Зарядка Warp</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Зарядка VOOC (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> до окончания)</string>
+    <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • Зарядка VOOC</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a SuperDart charger. Should match keyguard_plugged_in_superdart_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_superdart_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Зарядка SuperDart (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> до окончания)</string>
+    <string name="keyguard_plugged_in_superdart_charging"><xliff:g id="percentage">%s</xliff:g> • Зарядка SuperDart</string>
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">Показать кнопку стоп</string>
+    <string name="screenrecord_stopdot_summary">Нажмите и удерживайте, чтобы переместить</string>
+    <string name="screenrecord_lowquality_label">Низкое качество</string>
+    <string name="screenrecord_lowquality_summary">Для меньшего размера файла</string>
+    <string name="screenrecord_longer_timeout_switch_label">Максимальный размер файла</string>
+    <string name="screenrecord_longer_timeout_switch_summary">Ограничивает размер записи до 15 ГБ</string>
+    <string name="screenrecord_skip_time_label">Пропустить таймер</string>
+    <string name="screenrecord_skip_time_summary">Убирает 3 секунды ожидания</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Распознавание лица...</string>
+    <!-- Kill button in notification guts -->
+    <string name="force_stop_dlg_title">Остановить принудительно?</string>
+    <string name="force_stop_dlg_text">Принудительная остановка, может привести к некорректной работе приложения.</string>
+    <string name="guts_force_close_app">Закрыть приложение</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Режим чтения</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Режим чтения включен.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Режим чтения выключен.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Режим чтения включен.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Режим чтения выключен.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Защита от мерцания</string>
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">Панель громкости</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Звук</string>
+    <string name="quick_settings_sound_ring">Звонок</string>
+    <string name="quick_settings_sound_vibrate">Вибрация</string>
+    <string name="quick_settings_sound_dnd">Не беспокоить</string>
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">Частота обновления</string>
+    <string name="refresh_rate_auto_mode_placeholder">        Авто (<xliff:g id="min_refresh_rate" example="60">%1$d</xliff:g> - <xliff:g id="max_refresh_rate" example="60">%2$d</xliff:g> Гц)
+    </string>
+    <string name="refresh_rate_forced_mode_placeholder"><xliff:g id="refresh_rate" example="60">%1$d</xliff:g> Гц</string>
+    <!-- Sync QS Tile -->
+    <string name="quick_settings_sync_label">Синхронизация</string>
+    <string name="accessibility_quick_settings_sync_off">Синхронизация выключена</string>
+    <string name="accessibility_quick_settings_sync_on">Синхронизация включена</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Синхронизация отключена</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Синхронизация включена</string>
+</resources>

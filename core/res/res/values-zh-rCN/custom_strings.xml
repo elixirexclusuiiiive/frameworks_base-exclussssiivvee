@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">需要重启系统界面</string>
+    <string name="systemui_restart_message">要使所有更改生效，需重启系统界面，是否立即重启系统界面？</string>
+    <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">重启到引导程序</string>
+    <string name="reboot_to_bootloader_message">正在重启到引导程序\u2026</string>
+    <string name="reboot_to_recovery_title">重启到恢复模式</string>
+    <string name="reboot_to_recovery_message">正在重启到恢复模式\u2026</string>
+    <string name="reboot_system_title">重启系统</string>
+    <string name="reboot_system_message">正在重启系统\u2026</string>
+    <!-- Path of node of SuperDart charging -->
+    <string name="config_SuperDartAndVoocCharger_path">/sys/class/power_supply/battery/voocchg_ing</string>
+    <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">由于长期未使用，面容解锁已禁用</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">自动模式</string>
+    <string name="live_display_auto_summary">在日出和日落后自动调整屏幕的色温</string>
+    <string name="live_display_off">关闭</string>
+    <string name="live_display_off_summary">禁用所有调整</string>
+    <string name="live_display_day">日间</string>
+    <string name="live_display_day_summary">仅使用日间设置</string>
+    <string name="live_display_night">夜间</string>
+    <string name="live_display_night_summary">仅使用夜间设置</string>
+    <string name="live_display_outdoor">户外(强烈光照)</string>
+    <string name="live_display_outdoor_summary">仅使用户外设置</string>
+    <string name="live_display_hint">LiveDisplay可以帮助减少眼部疲劳，帮助您晚上入睡。点击此处尝试！</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay 关闭。</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: 自动模式。</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: 日间模式。</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: 夜间模式。</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: 户外模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay已关闭。</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 已更改为自动模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 已更改为日间模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 已更改为夜间模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 已更改为户外模式。</string>
+    <!-- App lock -->
+    <string name="unlock_application">解锁 <xliff:g id="label" example="Telegram">%1$s</xliff:g></string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">长按电源键解锁</string>
+    <string name="pocket_view_title">口袋模式已开启</string>
+    <string name="pocket_view_title_cancel">使用你的电话:</string>
+    <string name="pocket_view_top_tag_cancel">检查您手机的蓝色区域是否有任何障碍物，并清除任何污垢或灰尘。</string>
+    <string name="pocket_view_top_tag_cancel2">长按电源键强制退出口袋模式。</string>
+</resources>

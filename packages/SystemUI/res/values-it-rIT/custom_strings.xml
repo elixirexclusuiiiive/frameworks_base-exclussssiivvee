@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the nfc status bar icon. -->
+    <string name="status_bar_nfc">NFC</string>
+    <!-- Accessibility label for nfc icon (not shown on screen) [CHAR LIMIT=NONE] -->
+    <string name="accessibility_status_bar_nfc">Nfc</string>
+    <!-- Screenshot Delete Toast -->
+    <string name="delete_screenshot_toast">Istantanea eliminata</string>
+    <!-- Screenshot delete action -->
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Elimina</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Elimina istantanea</string>
+    <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">Utilizza Bluetooth</string>
+    <string name="bluetooth_is_off">Il Bluetooth è disattivato</string>
+    <string name="tap_a_device_to_connect">Tocca un dispositivo per connetterti</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine disattivata</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine attiva</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Cambia scheda dati</string>
+    <string name="qs_data_switch_toast_0">Correntemente, non è inserita alcuna scheda SIM</string>
+    <string name="qs_data_switch_toast_1">Correntemente, è inserita soltanto una scheda SIM</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Scheda dati cambiata a SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Scheda dati cambiata a SIM 2.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering USB</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <!-- Advance location quick setting tile -->
+    <string name="quick_settings_secondary_location_off"></string>
+    <string name="accessibility_quick_settings_location_off">Segnalazione posizione: disattivata.</string>
+    <string name="quick_settings_location_secondary_battery_saving">Risparmio Energetico</string>
+    <string name="accessibility_quick_settings_location_battery_saving">Segnalazione posizione: modalità risparmio energetico.</string>
+    <string name="quick_settings_location_secondary_gps_only">Solo Sensori</string>
+    <string name="accessibility_quick_settings_location_gps_only">Segnalazione posizione: modalità solo sensori.</string>
+    <string name="quick_settings_location_secondary_high_accuracy">Accuratezza Elevata</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">Segnalazione posizione: modalità accuratezza elevata.</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Riavvia</string>
+    <string name="global_action_reboot_more">Avanzata</string>
+    <string name="global_action_reboot_systemui">UI di Sistema</string>
+    <string name="global_action_reboot_sub">Sistema</string>
+    <string name="global_action_reboot_recovery">Ripristino</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_settings">Impostazioni</string>
+    <!-- Status bar tuner -->
+    <string name="status_bar_items_title">Icone della barra di stato</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_data_saver">Risparmio dati</string>
+    <string name="status_bar_call_strength">Intensità di chiamata</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">utilizzati oggi</string>
+    <string name="usage_data_default_suffix">Dati</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Dash charging</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Warp Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Warp Charging</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • VOOC Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • VOOC Charging</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a SuperDart charger. Should match keyguard_plugged_in_superdart_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_superdart_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • SuperDart Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_superdart_charging"><xliff:g id="percentage">%s</xliff:g> • SuperDart Charging</string>
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">Mostra punto di interruzione</string>
+    <string name="screenrecord_stopdot_summary">Pressione prolungata per spostarlo</string>
+    <string name="screenrecord_lowquality_label">Qualità inferiore</string>
+    <string name="screenrecord_lowquality_summary">Per dimensioni del file inferiori</string>
+    <string name="screenrecord_longer_timeout_switch_label">Limite di dimensioni del file maggiore</string>
+    <string name="screenrecord_longer_timeout_switch_summary">Limita le dimensioni della registrazione a 15 GB</string>
+    <string name="screenrecord_skip_time_label">Salta timer</string>
+    <string name="screenrecord_skip_time_summary">Rimuovi attesa di 3 secondi</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Riconoscimento del volto...</string>
+    <!-- Kill button in notification guts -->
+    <string name="force_stop_dlg_title">Forzare l\'arresto?</string>
+    <string name="force_stop_dlg_text">Se forzi l\'interruzione di un\'app, tale app potrebbe comportarsi in modo anomalo.</string>
+    <string name="guts_force_close_app">Chiudi applicazione</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Modalità lettura</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Modalità lettura attiva.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Modalità lettura disattivata.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Modalità lettura attivata.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Modalità lettura disattivata.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Anti-sfarfallio</string>
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">Volume panel</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Sound</string>
+    <string name="quick_settings_sound_ring">Ring</string>
+    <string name="quick_settings_sound_vibrate">Vibrate</string>
+    <string name="quick_settings_sound_dnd">Do not disturb</string>
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">Refresh rate</string>
+    <string name="refresh_rate_auto_mode_placeholder">        Auto (<xliff:g id="min_refresh_rate" example="60">%1$d</xliff:g> - <xliff:g id="max_refresh_rate" example="60">%2$d</xliff:g> Hz)
+    </string>
+    <string name="refresh_rate_forced_mode_placeholder"><xliff:g id="refresh_rate" example="60">%1$d</xliff:g> Hz</string>
+    <!-- Sync QS Tile -->
+    <string name="quick_settings_sync_label">Sync</string>
+    <string name="accessibility_quick_settings_sync_off">Sync off</string>
+    <string name="accessibility_quick_settings_sync_on">Sync on</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on</string>
+</resources>

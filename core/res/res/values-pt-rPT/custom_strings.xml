@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">Necessário reiniciar SystemUI</string>
+    <string name="systemui_restart_message">Para que todas as alterações surtam efeito, é necessário reiniciar a SystemUI. Reiniciar agora?</string>
+    <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">Reiniciar para bootloader</string>
+    <string name="reboot_to_bootloader_message">A reiniciar para o bootloader</string>
+    <string name="reboot_to_recovery_title">Reiniciar para Recovery</string>
+    <string name="reboot_to_recovery_message">A reiniciar para Recovery</string>
+    <string name="reboot_system_title">Reiniciar sistema</string>
+    <string name="reboot_system_message">A reiniciar o sistema</string>
+    <!-- Path of node of SuperDart charging -->
+    <string name="config_SuperDartAndVoocCharger_path">/sys/class/power_supply/battery/voocchg_ing</string>
+    <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Desbloqueio facial desativado por inatividade</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automático</string>
+    <string name="live_display_auto_summary">Ajustar automaticamente a temperatura da cor da tela após o pôr do sol e o nascer do sol</string>
+    <string name="live_display_off">Desligado</string>
+    <string name="live_display_off_summary">Desativar todos os ajustes</string>
+    <string name="live_display_day">Dia</string>
+    <string name="live_display_day_summary">Utilizar apenas as definições diurnas</string>
+    <string name="live_display_night">Noite</string>
+    <string name="live_display_night_summary">Utilizar apenas as definições noturnas</string>
+    <string name="live_display_outdoor">Exterior (sol brilhante)</string>
+    <string name="live_display_outdoor_summary">Utilizar apenas definições de exterior</string>
+    <string name="live_display_hint">LiveDisplay pode ajudar a reduzir a fadiga ocular e ajudá-lo a dormir à noite. Clique aqui para experimentá-lo!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay: desligado.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: modo automático.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modo diurno.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modo noturno.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modo exterior.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay desligado.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay alterado para modo automático.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay alterado para modo diurno.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay alterado para modo noturno.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay alterado para modo exterior.</string>
+    <!-- App lock -->
+    <string name="unlock_application">Desbloquear <xliff:g id="label" example="Telegram">%1$s</xliff:g></string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Pressionar e segurar o botão power para desbloquear</string>
+    <string name="pocket_view_title">Modo de bolso está ativo</string>
+    <string name="pocket_view_title_cancel">Para utilizar o seu dispositivo:</string>
+    <string name="pocket_view_top_tag_cancel">Verificar se a área azul do seu dispositivo está livre de obstruções e limpar qualquer sujidade ou poeira.</string>
+    <string name="pocket_view_top_tag_cancel2">Pressionar e segurar botão power para forçar a saída do modo de bolso.</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the nfc status bar icon. -->
+    <string name="status_bar_nfc">NFC</string>
+    <!-- Accessibility label for nfc icon (not shown on screen) [CHAR LIMIT=NONE] -->
+    <string name="accessibility_status_bar_nfc">NFC</string>
+    <!-- Screenshot Delete Toast -->
+    <string name="delete_screenshot_toast">スクリーンショットを削除しました</string>
+    <!-- Screenshot delete action -->
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">削除</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">スクリーンショットを削除</string>
+    <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">Bluetooth を使用する</string>
+    <string name="bluetooth_is_off">Bluetooth は OFF です</string>
+    <string name="tap_a_device_to_connect">タップでデバイスと接続</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">カフェイン</string>
+    <string name="accessibility_quick_settings_caffeine_off">カフェイン OFF</string>
+    <string name="accessibility_quick_settings_caffeine_on">カフェイン ON</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">データ通信の切り替え</string>
+    <string name="qs_data_switch_toast_0">SIM カードが挿入されていません</string>
+    <string name="qs_data_switch_toast_1">SIM カードは 1 枚のみ挿入されています</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">データ通信を SIM 1 に切り替えました。</string>
+    <string name="qs_data_switch_changed_2">データ通信を SIM 2 に切り替えました。</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB テザリング</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD (アンビエント表示)</string>
+    <!-- Advance location quick setting tile -->
+    <string name="quick_settings_secondary_location_off"></string>
+    <string name="accessibility_quick_settings_location_off">位置情報の報告: OFF</string>
+    <string name="quick_settings_location_secondary_battery_saving">バッテリー節約</string>
+    <string name="accessibility_quick_settings_location_battery_saving">位置情報の報告: バッテリー節約モード</string>
+    <string name="quick_settings_location_secondary_gps_only">センサーのみ</string>
+    <string name="accessibility_quick_settings_location_gps_only">位置情報の報告: センサーオンリーモード</string>
+    <string name="quick_settings_location_secondary_high_accuracy">高精度</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">位置情報の報告: 高精度モード</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">再起動</string>
+    <string name="global_action_reboot_more">高度な再起動</string>
+    <string name="global_action_reboot_systemui">システム UI</string>
+    <string name="global_action_reboot_sub">システム</string>
+    <string name="global_action_reboot_recovery">リカバリー</string>
+    <string name="global_action_reboot_bootloader">ブートローダー</string>
+    <string name="global_action_settings">設定</string>
+    <!-- Status bar tuner -->
+    <string name="status_bar_items_title">ステータスバーアイコン</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_data_saver">データセーバー</string>
+    <string name="status_bar_call_strength">呼び出しの強さ</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">今日から使用</string>
+    <string name="usage_data_default_suffix">データ</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash チャージ中 (充電完了まで <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g>)</string>
+    <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Dash チャージ中</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Warp チャージ中 (充電完了まで <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g>)</string>
+    <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Warp チャージ中</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • VOOC チャージ中 (充電完了まで <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g>)</string>
+    <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • VOOC チャージ中</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a SuperDart charger. Should match keyguard_plugged_in_superdart_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_superdart_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • SuperDart チャージ中 (充電完了まで <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g>)</string>
+    <string name="keyguard_plugged_in_superdart_charging"><xliff:g id="percentage">%s</xliff:g> • SuperDart チャージ中</string>
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">停止のドットを表示する</string>
+    <string name="screenrecord_stopdot_summary">長押しで移動します</string>
+    <string name="screenrecord_lowquality_label">低品質</string>
+    <string name="screenrecord_lowquality_summary">ファイルのサイズを最小にしたい場合</string>
+    <string name="screenrecord_longer_timeout_switch_label">ファイルサイズの制限を増やす</string>
+    <string name="screenrecord_longer_timeout_switch_summary">録画サイズを 15 GB に制限します</string>
+    <string name="screenrecord_skip_time_label">タイマーをスキップ</string>
+    <string name="screenrecord_skip_time_summary">3 秒の待機時間を削除します</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">顔を認識しています...</string>
+    <!-- Kill button in notification guts -->
+    <string name="force_stop_dlg_title">強制停止しますか?</string>
+    <string name="force_stop_dlg_text">アプリを強制停止すると誤動作を起こす可能性があります。</string>
+    <string name="guts_force_close_app">アプリを閉じる</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">読書モード</string>
+    <string name="accessibility_quick_settings_reading_mode_on">読書モード ON</string>
+    <string name="accessibility_quick_settings_reading_mode_off">読書モード OFF</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">読書モードを ON にしました。</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">読書モードを OFF にしました。</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">アンチフリッカー</string>
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">音量パネル</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">サウンド</string>
+    <string name="quick_settings_sound_ring">着信音</string>
+    <string name="quick_settings_sound_vibrate">バイブレーション</string>
+    <string name="quick_settings_sound_dnd">サイレント モード</string>
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">リフレッシュレート</string>
+    <string name="refresh_rate_auto_mode_placeholder">        自動 (<xliff:g id="min_refresh_rate" example="60">%1$d</xliff:g> - <xliff:g id="max_refresh_rate" example="60">%2$d</xliff:g> Hz)
+    </string>
+    <string name="refresh_rate_forced_mode_placeholder"><xliff:g id="refresh_rate" example="60">%1$d</xliff:g> Hz</string>
+    <!-- Sync QS Tile -->
+    <string name="quick_settings_sync_label">同期</string>
+    <string name="accessibility_quick_settings_sync_off">同期 OFF</string>
+    <string name="accessibility_quick_settings_sync_on">同期 ON</string>
+    <string name="accessibility_quick_settings_sync_changed_off">同期が OFF になっています</string>
+    <string name="accessibility_quick_settings_sync_changed_on">同期が ON になっています</string>
+</resources>

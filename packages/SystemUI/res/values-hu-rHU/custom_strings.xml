@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the nfc status bar icon. -->
+    <string name="status_bar_nfc">NFC</string>
+    <!-- Accessibility label for nfc icon (not shown on screen) [CHAR LIMIT=NONE] -->
+    <string name="accessibility_status_bar_nfc">Nfc</string>
+    <!-- Screenshot Delete Toast -->
+    <string name="delete_screenshot_toast">A képernyőkép törölve</string>
+    <!-- Screenshot delete action -->
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Törlés</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Képernyőkép törlése</string>
+    <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">Bluetooth használata</string>
+    <string name="bluetooth_is_off">Bluetooth kikapcsolva</string>
+    <string name="tap_a_device_to_connect">Érintsen meg egy eszközt a csatlakozáshoz</string>
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine ki</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine be</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Adatkártya váltás</string>
+    <string name="qs_data_switch_toast_0">Nem található SIM kártya</string>
+    <string name="qs_data_switch_toast_1">Jelenleg egy SIM kártya érhető el</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Adat átváltva SIM 1-re.</string>
+    <string name="qs_data_switch_changed_2">Adat átváltva SIM 2-re.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB megosztás</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <!-- Advance location quick setting tile -->
+    <string name="quick_settings_secondary_location_off"></string>
+    <string name="accessibility_quick_settings_location_off">Helymeghatározás: ki.</string>
+    <string name="quick_settings_location_secondary_battery_saving">Energiatakarékos mód</string>
+    <string name="accessibility_quick_settings_location_battery_saving">Helymeghatározás: energiatakarékos mód.</string>
+    <string name="quick_settings_location_secondary_gps_only">Csak szenzorok</string>
+    <string name="accessibility_quick_settings_location_gps_only">Helymeghatározás: csak szenzorok használata.</string>
+    <string name="quick_settings_location_secondary_high_accuracy">Magas pontosság</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">Helymeghatározás: magas pontosság.</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Újraindítás</string>
+    <string name="global_action_reboot_more">Haladó</string>
+    <string name="global_action_reboot_systemui">Kezelőfelület</string>
+    <string name="global_action_reboot_sub">Rendszer</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_settings">Beállítások</string>
+    <!-- Status bar tuner -->
+    <string name="status_bar_items_title">Állapotsor ikonok</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_data_saver">Adatcsökkentő</string>
+    <string name="status_bar_call_strength">Hívásminőség</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">mai forgalom</string>
+    <string name="usage_data_default_suffix">Adat</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash töltés (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> a teljes töltöttségig)</string>
+    <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Dash töltés</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Warp töltés (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> a teljes töltöttségig)</string>
+    <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Warp töltés</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • VOOC töltés (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> a teljes töltöttségig)</string>
+    <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • VOOC töltés</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a SuperDart charger. Should match keyguard_plugged_in_superdart_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_superdart_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • SuperDart töltés (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> a teljes töltöttségig)</string>
+    <string name="keyguard_plugged_in_superdart_charging"><xliff:g id="percentage">%s</xliff:g> • SuperDart töltés</string>
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">Leállító gomb megjelenítése</string>
+    <string name="screenrecord_stopdot_summary">Áthelyezéshez érintse meg hosszan</string>
+    <string name="screenrecord_lowquality_label">Minőség csökkentése</string>
+    <string name="screenrecord_lowquality_summary">A kisebb fájlmérethez</string>
+    <string name="screenrecord_longer_timeout_switch_label">Nagyobb fájlméret limit</string>
+    <string name="screenrecord_longer_timeout_switch_summary">Felvétel maximalizálása 15GB-ban</string>
+    <string name="screenrecord_skip_time_label">Időzítő kihagyása</string>
+    <string name="screenrecord_skip_time_summary">Elhagyja a 3 másodperces késleltetést</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Arcfelismerés...</string>
+    <!-- Kill button in notification guts -->
+    <string name="force_stop_dlg_title">Leállítja kényszerített módon?</string>
+    <string name="force_stop_dlg_text">A kényszerített leállítás hibás működést eredményezhet.</string>
+    <string name="guts_force_close_app">Alkalmazás bezárása</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Olvasó mód</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Olvasó mód be.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Olvasó mód ki.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Olvasó mód bekapcsolva.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Olvasó mód kikapcsolva.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Villódzásmentesítés</string>
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">Hangerő panel</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Hang</string>
+    <string name="quick_settings_sound_ring">Csörgés</string>
+    <string name="quick_settings_sound_vibrate">Rezgés</string>
+    <string name="quick_settings_sound_dnd">Ne zavarj</string>
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">Frissítési ráta</string>
+    <string name="refresh_rate_auto_mode_placeholder">        Auto (<xliff:g id="min_refresh_rate" example="60">%1$d</xliff:g> - <xliff:g id="max_refresh_rate" example="60">%2$d</xliff:g> Hz)
+    </string>
+    <string name="refresh_rate_forced_mode_placeholder"><xliff:g id="refresh_rate" example="60">%1$d</xliff:g> Hz</string>
+    <!-- Sync QS Tile -->
+    <string name="quick_settings_sync_label">Szinkronizálás</string>
+    <string name="accessibility_quick_settings_sync_off">Szinkronizálás ki</string>
+    <string name="accessibility_quick_settings_sync_on">Szinkronizálás be</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Szinkronizálás kikapcsolva</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Szinkronizálás bekapcsolva</string>
+</resources>

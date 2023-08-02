@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">Требуется перезагрузка интерфейса</string>
+    <string name="systemui_restart_message">Чтобы изменения вступили в силу, требуется перезагрузка интерфейса. Перезапустить сейчас?</string>
+    <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">Перезагрузить в Загрузчик</string>
+    <string name="reboot_to_bootloader_message">Перезагрузка в Загрузчик\u2026</string>
+    <string name="reboot_to_recovery_title">Перезагрузить в Рекавери</string>
+    <string name="reboot_to_recovery_message">Перезагрузка в рекавери\u2026</string>
+    <string name="reboot_system_title">Перезагрузить систему</string>
+    <string name="reboot_system_message">Перезагрузка системы\u2026</string>
+    <!-- Path of node of SuperDart charging -->
+    <string name="config_SuperDartAndVoocCharger_path">/sys/class/power_supply/battery/voocchg_ing</string>
+    <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Разблокировка по лицу отключена из-за бездействия</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Автоматически</string>
+    <string name="live_display_auto_summary">Автоматическая подстройка цветовой температуры экрана, после заката и восхода солнца</string>
+    <string name="live_display_off">Выключено</string>
+    <string name="live_display_off_summary">Отключить все настройки</string>
+    <string name="live_display_day">День</string>
+    <string name="live_display_day_summary">Использовать только дневные настройки</string>
+    <string name="live_display_night">Ночь</string>
+    <string name="live_display_night_summary">Использовать только ночные настройки</string>
+    <string name="live_display_outdoor">На улице (яркое солнце)</string>
+    <string name="live_display_outdoor_summary">Использовать только уличные настройки</string>
+    <string name="live_display_hint">Живой экран снизит нагрузку на глаза, это поможет легче уснуть ночью. Нажмите, чтобы попробовать!</string>
+    <string name="accessibility_quick_settings_live_display_off">Живой экран выключен.</string>
+    <string name="accessibility_quick_settings_live_display_auto">Живой экран: автоматический режим.</string>
+    <string name="accessibility_quick_settings_live_display_day">Живой экран: дневной режим.</string>
+    <string name="accessibility_quick_settings_live_display_night">Живой экран: ночной режим.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">Живой экран: уличный режим.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">Живой экран выключен.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">Живой экран переключен в автоматический режим.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">Живой экран переключен в дневной режим.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">Живой экран переключен в ночной режим.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">Живой экран переключен в уличный режим.</string>
+    <!-- App lock -->
+    <string name="unlock_application">Разблокировать <xliff:g id="label" example="Telegram">%1$s</xliff:g></string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Нажмите и удерживайте кнопку питания для разблокировки</string>
+    <string name="pocket_view_title">Режим \"В кармане\" включен</string>
+    <string name="pocket_view_title_cancel">Для использования телефона:</string>
+    <string name="pocket_view_top_tag_cancel">Убедитесь, что в синей области телефона нет никаких препятствий, и очистите ее от грязи и пыли.</string>
+    <string name="pocket_view_top_tag_cancel2">Долгое нажатие кнопки питания для принудительного выхода из режима \"В кармане\".</string>
+</resources>
