@@ -176,6 +176,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -220,6 +221,9 @@ class StorageManagerService extends IStorageManager.Stub
 
     @GuardedBy("mLock")
     private final Set<Integer> mCeStoragePreparedUsers = new ArraySet<>();
+    
+    @GuardedBy("mLock")
+    private final Map<Integer, Set<String>> mPackagesByUid = new HashMap<>();
 
     public static class Lifecycle extends SystemService {
         private StorageManagerService mStorageManagerService;
@@ -886,6 +890,7 @@ class StorageManagerService extends IStorageManager.Stub
     }
 
     private final Handler mHandler;
+    private final Handler mMonitorHandler;
 
     private BroadcastReceiver mUserReceiver = new BroadcastReceiver() {
         @Override
@@ -1937,6 +1942,10 @@ class StorageManagerService extends IStorageManager.Stub
         HandlerThread hthread = new HandlerThread(TAG);
         hthread.start();
         mHandler = new StorageManagerServiceHandler(hthread.getLooper());
+        
+        HandlerThread monitorHandlerThread = new HandlerThread("MonitorHandlerThread");
+        monitorHandlerThread.start();
+        mMonitorHandler = new Handler(monitorHandlerThread.getLooper());
 
         // Add OBB Action Handler to StorageManagerService thread.
         mObbActionHandler = new ObbActionHandler(IoThread.get().getLooper());
@@ -2110,13 +2119,21 @@ class StorageManagerService extends IStorageManager.Stub
     private void updateLegacyStorageApps(String packageName, int uid, boolean hasLegacy) {
         synchronized (mLock) {
             if (hasLegacy) {
-                Slog.v(TAG, "Package " + packageName + " has legacy storage");
+                if (DEBUG_EVENTS) Slog.v(TAG, "Package " + packageName + " has legacy storage");
                 mUidsWithLegacyExternalStorage.add(uid);
+                mPackagesByUid.computeIfAbsent(uid, k -> new HashSet<>()).add(packageName);
             } else {
-                // TODO(b/149391976): Handle shared user id. Check if there's any other
-                // installed app with legacy external storage before removing
-                Slog.v(TAG, "Package " + packageName + " does not have legacy storage");
-                mUidsWithLegacyExternalStorage.remove(uid);
+                if (DEBUG_EVENTS) Slog.v(TAG, "Package " + packageName + " does not have legacy storage");
+                Set<String> packages = mPackagesByUid.get(uid);
+                if (packages != null) {
+                    packages.remove(packageName);
+                    if (packages.isEmpty()) {
+                        mUidsWithLegacyExternalStorage.remove(uid);
+                        mPackagesByUid.remove(uid);
+                    }
+                } else {
+                    mUidsWithLegacyExternalStorage.remove(uid);
+                }
             }
         }
     }
@@ -2124,19 +2141,18 @@ class StorageManagerService extends IStorageManager.Stub
     private void snapshotAndMonitorLegacyStorageAppOp(UserHandle user) {
         int userId = user.getIdentifier();
 
-        // TODO(b/149391976): Use mIAppOpsService.getPackagesForOps instead of iterating below
-        // It should improve performance but the AppOps method doesn't return any app here :(
-        // This operation currently takes about ~20ms on a freshly flashed device
-        for (ApplicationInfo ai : mPmInternal.getInstalledApplications(MATCH_DIRECT_BOOT_AWARE
-                        | MATCH_DIRECT_BOOT_UNAWARE | MATCH_UNINSTALLED_PACKAGES | MATCH_ANY_USER,
-                        userId, Process.myUid())) {
-            try {
-                boolean hasLegacy = mIAppOpsService.checkOperation(OP_LEGACY_STORAGE, ai.uid,
-                        ai.packageName) == MODE_ALLOWED;
-                updateLegacyStorageApps(ai.packageName, ai.uid, hasLegacy);
-            } catch (RemoteException e) {
-                Slog.e(TAG, "Failed to check legacy op for package " + ai.packageName, e);
+        try {
+            List<AppOpsManager.PackageOps> packagesOps = mIAppOpsService.getPackagesForOps(new int[]{OP_LEGACY_STORAGE});
+            if (packagesOps != null) {
+                for (AppOpsManager.PackageOps packageOps : packagesOps) {
+                    for (AppOpsManager.OpEntry entry : packageOps.getOps()) {
+                        boolean hasLegacy = entry.getMode() == MODE_ALLOWED;
+                        updateLegacyStorageApps(packageOps.getPackageName(), packageOps.getUid(), hasLegacy);
+                    }
+                }
             }
+        } catch (RemoteException e) {
+            Slog.e(TAG, "Failed to get packages for ops", e);
         }
 
         if (mPackageMonitorsForUser.get(userId) == null) {
@@ -2146,8 +2162,7 @@ class StorageManagerService extends IStorageManager.Stub
                     updateLegacyStorageApps(packageName, uid, false);
                 }
             };
-            // TODO(b/149391976): Use different handler?
-            monitor.register(mContext, user, true, mHandler);
+            monitor.register(mContext, user, true, mMonitorHandler);
             mPackageMonitorsForUser.put(userId, monitor);
         } else {
             Slog.w(TAG, "PackageMonitor is already registered for: " + userId);
