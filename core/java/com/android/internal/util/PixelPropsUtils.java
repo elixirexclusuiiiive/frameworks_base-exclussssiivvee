@@ -181,7 +181,7 @@ public class PixelPropsUtils {
         }
     }
 
-    static void setPropValue(String key, Object value) {
+    private static void setPropValue(String key, Object value) {
         try {
             keylog("Setting prop " + key + " to " + value.toString());
             Field field = Build.class.getDeclaredField(key);
@@ -215,7 +215,7 @@ public class PixelPropsUtils {
         return def;
     }
 
-    static void dlog(String msg) {
+    private static void dlog(String msg) {
       if (DEBUG) Log.d(TAG, msg);
     }
 
