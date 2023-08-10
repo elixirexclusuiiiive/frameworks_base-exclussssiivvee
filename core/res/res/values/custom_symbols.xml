@@ -162,4 +162,8 @@
     <java-symbol type="string" name="config_pocketJudgeVendorSensorName" />
     <java-symbol type="string" name="config_pocketJudgeVendorProximitySensorName" />
 
+    <!-- Define device configs on boot -->
+    <java-symbol type="array" name="global_device_configs_override" />
+    <java-symbol type="array" name="device_configs_override" />
+
 </resources>
