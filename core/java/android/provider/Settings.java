@@ -12102,7 +12102,6 @@ public final class Settings {
         public static final String BRIGHTNESS_SLIDER_STYLE = "brightness_slider_style";
 
         /**
-         * Whether to show QS auto brightness toggle button
          * @hide
          */
         @Readable
