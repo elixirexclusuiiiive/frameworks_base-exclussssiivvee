@@ -6092,6 +6092,16 @@ public final class Settings {
         public static final String QS_TRANSPARENCY = "qs_transparency";
 
         /**
+         * @hide
+         */
+        public static final String QS_HEADER_CUSTOM_IMAGE_URI_ENABLED = "qs_header_custom_image_uri_enabled";
+
+        /**
+         * @hide
+         */
+        public static final String QS_HEADER_CUSTOM_IMAGE_URI = "qs_header_custom_image_uri";
+
+        /**
          * Bottom screen shortcuts on keyguard
          * Two lists of strings delimeted by ;
          * Each list of string is delimited by ,
