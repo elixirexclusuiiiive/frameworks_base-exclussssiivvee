@@ -56,6 +56,7 @@ import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.plugins.NavigationEdgeBackPlugin;
 import com.android.systemui.settings.DisplayTracker;
 import com.android.systemui.shared.navigationbar.RegionSamplingHelper;
+import com.android.systemui.statusbar.VibratorHelper;
 
 import java.io.PrintWriter;
 import java.util.concurrent.Executor;
@@ -136,6 +137,7 @@ public class NavigationBarEdgePanel extends View implements NavigationEdgeBackPl
             = new PathInterpolator(1.0f / RUBBER_BAND_AMOUNT_APPEAR, 1.0f, 1.0f, 1.0f);
 
     private final WindowManager mWindowManager;
+    private final VibratorHelper mVibratorHelper;
 
     /**
      * The paint the arrow is drawn with
@@ -285,11 +287,13 @@ public class NavigationBarEdgePanel extends View implements NavigationEdgeBackPl
     public NavigationBarEdgePanel(
             Context context,
             LatencyTracker latencyTracker,
+            VibratorHelper vibratorHelper,
             @Background Executor backgroundExecutor,
             DisplayTracker displayTracker) {
         super(context);
 
         mWindowManager = context.getSystemService(WindowManager.class);
+        mVibratorHelper = vibratorHelper;
 
         mDensity = context.getResources().getDisplayMetrics().density;
 
@@ -639,6 +643,12 @@ public class NavigationBarEdgePanel extends View implements NavigationEdgeBackPl
             mVelocityTracker = VelocityTracker.obtain();
         }
         mVelocityTracker.computeCurrentVelocity(1000);
+        // Only do the extra translation if we're not already flinging
+        boolean isSlow = Math.abs(mVelocityTracker.getXVelocity()) < 500;
+        if (isSlow
+                || SystemClock.uptimeMillis() - mVibrationTime >= GESTURE_DURATION_FOR_CLICK_MS) {
+            mVibratorHelper.vibrate(VibrationEffect.EFFECT_CLICK);
+        }
 
         // Let's also snap the angle a bit
         if (mAngleOffset > -4) {
@@ -733,6 +743,8 @@ public class NavigationBarEdgePanel extends View implements NavigationEdgeBackPl
         // Apply a haptic on drag slop passed
         if (!mDragSlopPassed && touchTranslation > mSwipeTriggerThreshold) {
             mDragSlopPassed = true;
+            mVibratorHelper.vibrate(VibrationEffect.EFFECT_TICK);
+            mVibrationTime = SystemClock.uptimeMillis();
 
             // Let's show the arrow and animate it in!
             mDisappearAmount = 0.0f;
