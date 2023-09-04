@@ -4,11 +4,14 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.provider.Settings;
 import android.icu.text.DateFormat;
 import android.icu.text.DisplayContext;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.os.UserHandle;
 import android.util.AttributeSet;
+import android.util.Log;
 import com.android.systemui.bcsmartspace.R;
 import java.util.Locale;
 import java.util.Objects;
@@ -44,6 +47,13 @@ public class IcuDateTextView extends DoubleShadowTextView {
         getContext().registerReceiver(this.mIntentReceiver, intentFilter);
         onTimeChanged(true);
         this.mHandler = new Handler();
+        if (Settings.Secure.getIntForUser(getContext().getContentResolver(), Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE, 0, UserHandle.USER_CURRENT) != 0) {
+            Log.w("BcSmartspaceCard", "Custom clock enabled, hiding date view");
+            getLayoutParams().width = 0;
+            getLayoutParams().height = 0;
+        } else {
+            Log.i("BcSmartspaceCard", "Attached IcuDateView to smartspace");
+        }
     }
 
     @Override // android.view.View
