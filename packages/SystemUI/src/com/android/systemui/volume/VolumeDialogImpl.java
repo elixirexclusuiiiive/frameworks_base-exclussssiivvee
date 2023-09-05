@@ -71,6 +71,7 @@ import android.graphics.drawable.RotateDrawable;
 import android.media.AppVolume;
 import android.media.AudioManager;
 import android.media.AudioSystem;
+import android.media.MediaPlayer;
 import android.media.session.MediaController;
 import android.media.session.MediaSessionManager;
 import android.media.session.PlaybackState;
@@ -2835,6 +2836,7 @@ public class VolumeDialogImpl implements VolumeDialog, Dumpable,
                 }
             }
             mController.vibrate(VibrationEffect.get(VibrationEffect.EFFECT_TEXTURE_TICK));
+            playSound();
         }
 
         @Override
@@ -2856,6 +2858,15 @@ public class VolumeDialogImpl implements VolumeDialog, Dumpable,
                         USER_ATTEMPT_GRACE_PERIOD);
             }
         }
+    }
+
+    private void playSound() {
+        AudioManager audioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        if (audioManager != null && audioManager.isMusicActive()) {
+            return;
+        }
+        MediaPlayer mediaPlayer = MediaPlayer.create(mContext, R.raw.volume_control_sound);
+        mediaPlayer.start();
     }
 
     private final class Accessibility extends AccessibilityDelegate {
