@@ -186,7 +186,7 @@ public class Smart5gService extends SystemService {
     }
 
     private boolean isEnabled(int subId) {
-        return Settings.System.getIntForUser(mContext.getContentResolver(), SMART_5G + subId, 1,
+        return Settings.System.getIntForUser(mContext.getContentResolver(), SMART_5G + subId, 0,
                 UserHandle.USER_CURRENT) == 1;
     }
 
