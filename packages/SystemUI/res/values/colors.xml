@@ -255,9 +255,6 @@
     <color name="rear_display_overlay_animation_background_color">#1E1B17</color>
     <color name="rear_display_overlay_dialog_background_color">#1E1B17</color>
     
-    <!-- Keyguard buttons (affordance) -->    
-    <color name="keyguard_button_bg_color">#80FFFFFF</color>
-    
     <!-- New color style -->
     <color name="colorAccent">@android:color/system_accent1_600</color>
     <color name="colorAccentVariant">@android:color/system_accent3_600</color>

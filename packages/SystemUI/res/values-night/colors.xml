@@ -118,7 +118,4 @@
 
     <!-- Sfps arrow -->
     <color name="sfps_chevron_fill">@color/material_dynamic_secondary20</color>
-    
-    <!-- Keyguard buttons (affordance) -->    
-    <color name="keyguard_button_bg_color">#80000000</color>
 </resources>
