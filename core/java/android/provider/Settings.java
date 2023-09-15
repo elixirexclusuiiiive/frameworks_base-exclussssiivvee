@@ -5556,11 +5556,6 @@ public final class Settings {
         /**
          * @hide
          */
-        public static final String USE_TILES_ON_SECURE_KEYGUARD = "use_tiles_on_secure_keyguard";
-
-        /**
-         * @hide
-         */
         public static final String GLOBAL_ACTIONS_LIST = "global_actions_list";
 
 
