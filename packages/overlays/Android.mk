@@ -115,6 +115,7 @@ LOCAL_REQUIRED_MODULES := \
     LSClockOOSAlike \
     LSClockAnalog \
     LSClockMinimal1 \
+    LSClockLazy1 \
     preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)
