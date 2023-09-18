@@ -62,7 +62,7 @@
 
         <TextClock
             android:id="@+id/textClock"
-            android:textSize="25.0sp"
+            android:textSize="22.0sp"
             android:textStyle="bold"
             android:layout_marginEnd="@dimen/_5sdp"
             android:layout_marginStart="@dimen/_5sdp"
