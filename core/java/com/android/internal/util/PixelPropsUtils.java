@@ -66,10 +66,10 @@ public class PixelPropsUtils {
         "MANUFACTURER", "Google",
         "DEVICE", "redfin",
         "HARDWARE", "redfin",
-        "ID", "TQ3A.230805.001",
+        "ID", "TQ3A.230901.001",
         "PRODUCT", "redfin",
         "MODEL", "Pixel 5",
-        "FINGERPRINT", "google/redfin/redfin:13/TQ3A.230805.001/10316531:user/release-keys"
+        "FINGERPRINT", "google/redfin/redfin:13/TQ3A.230901.001/10750268:user/release-keys"
     );
 
     private static final Map<String, Object> sS23Props = Map.of(
@@ -85,10 +85,10 @@ public class PixelPropsUtils {
         "MANUFACTURER", "Google",
         "DEVICE", "cheetah",
         "HARDWARE", "cheetah",
-        "ID", "TQ3A.230805.001",
+        "ID", "TQ3A.230901.001",
         "PRODUCT", "cheetah",
         "MODEL", "Pixel 7 Pro",
-        "FINGERPRINT", "google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/release-keys"
+        "FINGERPRINT", "google/cheetah/cheetah:13/TQ3A.230901.001/10750268:user/release-keys"
     );
 
     private static final Map<String, Object> sPixelXLProps = Map.of(
