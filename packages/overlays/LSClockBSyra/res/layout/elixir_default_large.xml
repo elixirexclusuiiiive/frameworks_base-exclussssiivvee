@@ -6,7 +6,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:aapt="http://schemas.android.com/aapt" 
 android:layout_gravity="center_vertical|center_horizontal" 
 android:layout_width="match_parent" 
-android:paddingBottom="130dp"
+android:paddingBottom="@dimen/_130sdp"
 android:layout_height="match_parent">
 
 <FrameLayout

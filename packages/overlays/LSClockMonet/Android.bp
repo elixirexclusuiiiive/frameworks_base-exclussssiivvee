@@ -2,4 +2,7 @@ runtime_resource_overlay {
     name: "LSClockMonet",
     sdk_version: "current",
     product_specific: true,
+    static_libs: [
+        "org.elixir.resources",
+    ],
 }
