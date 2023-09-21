@@ -23,7 +23,7 @@
 
         <TextClock
             android:id="@+id/textClock"
-            android:textSize="47.5sp"
+            android:textSize="65.0sp"
             android:textStyle="bold"
             android:textColor="@android:color/white" 
             android:layout_width="wrap_content"
@@ -37,12 +37,12 @@
             android:orientation="vertical"
             android:layout_toEndOf="@+id/textClock"
             android:layout_marginTop="@dimen/_11sdp"
-            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_4sdp"
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content" >
 
             <TextClock 
-                android:textSize="10.0sp"
+                android:textSize="16.0sp"
                 android:textColor="@android:color/system_accent1_300" 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 android:format24Hour="MMM dd"  />
 
             <TextClock 
-                android:textSize="27.5sp"
+                android:textSize="40.0sp"
                 android:textStyle="bold" 
                 android:layout_gravity="start"
                 android:layout_marginTop="@dimen/_minus7sdp"
@@ -65,7 +65,7 @@
     </RelativeLayout>
 
     <TextClock 
-        android:textSize="12.5sp"
+        android:textSize="17.0sp"
         android:layout_marginTop="@dimen/_minus15sdp"
         android:textColor="@android:color/system_accent3_300" 
         android:layout_width="wrap_content"

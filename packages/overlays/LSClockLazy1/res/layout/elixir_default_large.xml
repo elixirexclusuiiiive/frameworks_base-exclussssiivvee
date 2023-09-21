@@ -6,7 +6,7 @@
     xmlns:aapt="http://schemas.android.com/aapt" 
     android:layout_gravity="center_vertical|center_horizontal" 
     android:layout_width="match_parent" 
-    android:paddingBottom="130dp"
+    android:paddingBottom="@dimen/_130sdp"
     android:layout_height="match_parent">
 <LinearLayout
     android:gravity="center" 
@@ -44,7 +44,7 @@
 
             <TextClock 
                 android:textSize="20.0sp"
-                android:textColor="@android:color/system_accent3_300" 
+                android:textColor="@android:color/system_accent1_300" 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:format12Hour="MMM dd"
@@ -54,7 +54,7 @@
                 android:textSize="55.0sp"
                 android:textStyle="bold" 
                 android:layout_gravity="start"
-                android:layout_marginTop="@dimen/_minus15sdp"
+                android:layout_marginTop="@dimen/_minus12sdp"
                 android:textColor="@android:color/white" 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,8 +66,8 @@
     </RelativeLayout>
 
     <TextClock 
-        android:textSize="25.0sp"
-        android:layout_marginTop="@dimen/_minus30sdp"
+        android:textSize="23.0sp"
+        android:layout_marginTop="@dimen/_minus25sdp"
         android:textColor="@android:color/system_accent3_300" 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

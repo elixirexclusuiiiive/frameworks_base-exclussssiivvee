@@ -33,7 +33,7 @@
         <TextView 
             android:textSize="50.0sp"
             android:textStyle="bold" 
-            android:textColor="#f44336" 
+            android:textColor="@android:color/system_accent1_300" 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -56,16 +56,16 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:background="@drawable/back_cover"
-        android:layout_marginTop="@dimen/_minus10sdp"
+        android:layout_marginTop="@dimen/_minus8sdp"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content" >
 
         <TextClock
             android:id="@+id/textClock"
-            android:textSize="22.0sp"
+            android:textSize="17.0sp"
             android:textStyle="bold"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_6sdp"
             android:textColor="@android:color/white" 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
