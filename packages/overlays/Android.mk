@@ -27,72 +27,6 @@ LOCAL_REQUIRED_MODULES := \
     DisplayCutoutEmulationTallOverlay \
     DisplayCutoutEmulationWaterfallOverlay \
     DisplayCutoutEmulationWideOverlay \
-    IconPackCircularAndroidOverlay \
-    IconPackCircularLauncherOverlay \
-    IconPackCircularSettingsOverlay \
-    IconPackCircularSystemUIOverlay \
-    IconPackVictorAndroidOverlay \
-    IconPackVictorLauncherOverlay \
-    IconPackVictorSettingsOverlay \
-    IconPackVictorSystemUIOverlay \
-    IconPackSamAndroidOverlay \
-    IconPackSamLauncherOverlay \
-    IconPackSamSettingsOverlay \
-    IconPackSamSystemUIOverlay \
-    IconPackKaiAndroidOverlay \
-    IconPackKaiLauncherOverlay \
-    IconPackKaiSettingsOverlay \
-    IconPackKaiSystemUIOverlay \
-    IconPackFilledAndroidOverlay \
-    IconPackFilledLauncherOverlay \
-    IconPackFilledSettingsOverlay \
-    IconPackFilledSystemUIOverlay \
-    IconPackRoundedAndroidOverlay \
-    IconPackRoundedLauncherOverlay \
-    IconPackRoundedSettingsOverlay \
-    IconPackRoundedSystemUIOverlay \
-    IconPackOOSAndroidOverlay \
-    IconPackOOSLauncherOverlay \
-    IconPackOOSSettingsOverlay \
-    IconPackOOSSystemUIOverlay \
-    IconPackOutlineAndroidOverlay \
-    IconPackOutlineSettingsOverlay \
-    IconPackOutlineSystemUIOverlay \
-    IconPackOutlineLauncherOverlay \
-    IconPackAcherusAndroidOverlay \
-    IconPackAcherusLauncherOverlay \
-    IconPackAcherusSettingsOverlay \
-    IconPackAcherusSystemUIOverlay \
-    IconPackPUIAndroidOverlay \
-    IconPackPUILauncherOverlay \
-    IconPackPUISettingsOverlay \
-    IconPackPUISystemUIOverlay \
-    IconPackXperiaAndroidOverlay \
-    IconPackXperiaSettingsOverlay \
-    IconPackXperiaSystemUIOverlay \
-    IconPackPlumpySystemUIOverlay \
-    IconPackPlumpyAndroidOverlay \
-    IconPackAuroraAndroidOverlay \
-    IconPackAuroraSystemUIOverlay \
-    IconPackGradiconAndroidOverlay \
-    IconPackGradiconSystemUIOverlay \
-    IconPackLornAndroidOverlay \
-    IconPackLornSystemUIOverlay \
-    IconShapeCloudyOverlay \
-    IconShapeCylinderOverlay \
-    IconShapeFlowerOverlay \
-    IconShapeHeartOverlay \
-    IconShapeHexagonOverlay \
-    IconShapeLeafOverlay \
-    IconShapePebbleOverlay \
-    IconShapeRoundedHexagonOverlay \
-    IconShapeRoundedRectOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeStretchedOverlay \
-    IconShapeTaperedRectOverlay \
-    IconShapeTeardropOverlay \
-    IconShapeVesselOverlay \
     NavigationBarMode3ButtonOverlay \
     NavigationBarModeGesturalOverlay \
     NavigationBarModeGesturalOverlayNarrowBack \
@@ -101,10 +35,6 @@ LOCAL_REQUIRED_MODULES := \
     NoCutoutOverlay \
     NotchBarKillerOverlay \
     NotchBarKillerLeftrOverlay \
-    QSTilesClassicOverlay \
-    OutlineShapesOverlay \
-    MaybeRectangleOverlay \
-    OutlineBrightnessOverlay \
     LSClockOOSNothing  \
     LSClockNothing \
     LSClockBSyra \
