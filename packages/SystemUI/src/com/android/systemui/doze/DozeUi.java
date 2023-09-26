@@ -18,11 +18,13 @@ package com.android.systemui.doze;
 
 import static com.android.systemui.doze.DozeMachine.State.DOZE;
 import static com.android.systemui.doze.DozeMachine.State.DOZE_AOD_PAUSED;
+import com.android.systemui.R;
 
 import android.app.AlarmManager;
 import android.content.Context;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.text.format.Formatter;
 import android.util.Log;
 
@@ -36,6 +38,8 @@ import com.android.systemui.util.wakelock.WakeLock;
 import java.util.Calendar;
 
 import javax.inject.Inject;
+
+import static android.provider.Settings.Secure.LOCKSCREEN_USE_DOUBLE_LINE_CLOCK;
 
 /**
  * The policy controlling doze.
@@ -130,13 +134,24 @@ public class DozeUi implements DozeMachine.Part {
                 break;
             case INITIALIZED:
                 mHost.startDozing();
+                publishStateForDClock(true);
                 break;
             case FINISH:
                 mHost.stopDozing();
+                publishStateForDClock(false);
                 unscheduleTimeTick();
                 break;
         }
         updateAnimateWakeup(newState);
+    }
+
+    private void publishStateForDClock(boolean isStarted) {
+        boolean isDepthClock = mContext.getResources().getBoolean(R.bool.config_elixirDepthClockEnabled);
+        if ((isDepthClock) && (isStarted)) {
+            Settings.Secure.putInt(mContext.getContentResolver(), LOCKSCREEN_USE_DOUBLE_LINE_CLOCK, 0);
+        } else {
+            Settings.Secure.putInt(mContext.getContentResolver(), LOCKSCREEN_USE_DOUBLE_LINE_CLOCK, 1);
+        }
     }
 
     private void updateAnimateWakeup(DozeMachine.State state) {

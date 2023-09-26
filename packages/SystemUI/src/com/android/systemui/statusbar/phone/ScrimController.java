@@ -1212,6 +1212,10 @@ public class ScrimController implements ViewTreeObserver.OnPreDrawListener, Dump
 
     private void updateScrimColor(View scrim, float alpha, int tint) {
         alpha = Math.max(0, Math.min(1.0f, alpha));
+        boolean isDepthClock = mScrimBehind.getContext().getResources().getBoolean(R.bool.config_elixirDepthClockEnabled);
+        if ((mState == ScrimState.KEYGUARD) && (isDepthClock)) {
+            alpha = 0.0f;
+        }
         if (scrim instanceof ScrimView) {
             ScrimView scrimView = (ScrimView) scrim;
             if (DEBUG_MODE) {
