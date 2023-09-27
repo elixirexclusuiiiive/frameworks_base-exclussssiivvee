@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Flag to disable alpha on lockscreen if a depth clock is enabled -->
+    <bool name="config_elixirDepthClockEnabled">true</bool>
+
+</resources>

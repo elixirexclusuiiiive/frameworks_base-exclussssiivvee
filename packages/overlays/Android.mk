@@ -118,6 +118,7 @@ LOCAL_REQUIRED_MODULES := \
     LSClockLazy1 \
     LSClockMinimal2 \
     LSClockExotic1 \
+    LSClockIosDepth1 \
     preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)

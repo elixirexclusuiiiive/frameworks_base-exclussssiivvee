@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.shared.clocks.ClockLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_160sdp"
+    android:layout_gravity="center_horizontal|center_vertical">
+<FrameLayout
+	android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+	android:layout_height="wrap_content">
+
+    <LinearLayout
+		android:gravity="center"
+		android:layout_gravity="center"
+        android:layout_marginTop="-220dp"	
+		android:layout_width="wrap_content"	
+		android:layout_height="wrap_content">
+  
+        <TextClock
+			android:textSize="70.0sp"
+			android:gravity="center"
+            android:fontFamily="@font/evt"
+			android:maxLines="1"
+            android:layout_weight="0"   	
+			android:textColor="#ffffffff"	  
+			android:layout_width="wrap_content"	 
+			android:layout_height="wrap_content"
+            android:format12Hour="hh:mm"
+            android:format24Hour="kk:mm"/>
+      
+    </LinearLayout>
+       
+    <ImageView
+        android:id="@+id/depthClockImageView"
+        android:layout_width="@dimen/_330sdp"
+	    android:layout_height="882.5dp"
+		android:layout_marginTop="@dimen/_32sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:alpha="1.0"
+        android:background="@drawable/gen"/>
+</FrameLayout>
+</com.android.systemui.shared.clocks.ClockLayout>
