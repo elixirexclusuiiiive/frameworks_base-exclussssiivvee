@@ -11094,6 +11094,13 @@ public final class Settings {
                 "lockscreen_use_double_line_clock";
 
         /**
+         * Whether depth clock style is enabled on lockscreen
+         *
+         * @hide
+         */
+        public static final String LOCKSCREEN_DEPTH_CLOCK = "lockscreen_depth_clock";
+
+        /**
          * Whether to show the vibrate icon in the Status Bar (default off)
          *
          * @hide
