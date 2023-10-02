@@ -21,7 +21,7 @@
         <TextClock
 			android:textSize="70.0sp"
 			android:gravity="center"
-            android:fontFamily="@font/evt"
+            android:fontFamily="evolvesans-bold"
 			android:maxLines="1"
             android:layout_weight="0"   	
 			android:textColor="#ffffffff"	  
