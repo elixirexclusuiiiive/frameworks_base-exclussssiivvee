@@ -1,8 +1,0 @@
-runtime_resource_overlay {
-    name: "LSClockOOSNothing",
-    sdk_version: "current",
-    product_specific: true,
-    static_libs: [
-        "org.elixir.resources",
-    ],
-}

@@ -35,20 +35,6 @@ LOCAL_REQUIRED_MODULES := \
     NoCutoutOverlay \
     NotchBarKillerOverlay \
     NotchBarKillerLeftrOverlay \
-    LSClockOOSNothing  \
-    LSClockNothing \
-    LSClockBSyra \
-    LSClockMonet \
-    LSClockHyperBox \
-    LSClockHyperBox2 \
-    LSClockHyperCode \
-    LSClockOOSAlike \
-    LSClockAnalog \
-    LSClockMinimal1 \
-    LSClockLazy1 \
-    LSClockMinimal2 \
-    LSClockExotic1 \
-    LSClockIosDepth1 \
     preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)

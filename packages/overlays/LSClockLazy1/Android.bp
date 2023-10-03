@@ -1,8 +1,0 @@
-runtime_resource_overlay {
-    name: "LSClockLazy1",
-    sdk_version: "current",
-    product_specific: true,
-    static_libs: [
-        "org.elixir.resources",
-    ],
-}
