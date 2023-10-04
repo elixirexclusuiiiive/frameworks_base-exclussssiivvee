@@ -63,6 +63,7 @@ import java.util.Locale;
 
 import static android.provider.Settings.Secure.ELIXIR_EXCLUSIVE_BUILD;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
+import static android.provider.Settings.Secure.LOCKSCREEN_DEPTH_CLOCK;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE;
 
 public class customUtils {
@@ -391,6 +392,7 @@ public static boolean deviceHasFlashlight(Context ctx) {
         Settings.Secure.putInt(resolver, ELIXIR_EXCLUSIVE_BUILD, value);
         if (value == 0) {
             Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, 0);
+            Settings.Secure.putInt(resolver, LOCKSCREEN_DEPTH_CLOCK, 0);
             Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE, 0);
         }
     }

@@ -319,7 +319,7 @@ open class ClockRegistry(
     fun createCurrentClock(): ClockController {
         val clockId = currentClockId
         Log.i(TAG, "currentId := " + clockId.toString())
-        val isForceCustomClock = Settings.Secure.getInt(context.contentResolver,Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK, 0) != 0;
+        val isForceCustomClock = Settings.Secure.getInt(context.contentResolver,Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK, 0) != 0 || Settings.Secure.getInt(context.contentResolver,Settings.Secure.LOCKSCREEN_DEPTH_CLOCK, 0) != 0
         if (isForceCustomClock) {
             Log.i(TAG, "Custom clock provider enabled")
             return createClock(CUSTOM_CLOCK_ID)!!

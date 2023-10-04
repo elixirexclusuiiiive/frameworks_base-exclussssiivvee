@@ -11101,6 +11101,13 @@ public final class Settings {
         public static final String LOCKSCREEN_DEPTH_CLOCK = "lockscreen_depth_clock";
 
         /**
+         * Lockscreen depth clock style
+         *
+         * @hide
+         */
+        public static final String LOCKSCREEN_DEPTH_CLOCK_STYLES = "lockscreen_depth_clock_styles";
+
+        /**
          * Whether to show the vibrate icon in the Status Bar (default off)
          *
          * @hide

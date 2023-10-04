@@ -85,8 +85,6 @@ import javax.inject.Inject;
 
 import kotlinx.coroutines.CoroutineDispatcher;
 
-import static android.provider.Settings.Secure.LOCKSCREEN_DEPTH_CLOCK;
-
 /**
  * Controls both the scrim behind the notifications and in front of the notifications (when a
  * security method gets shown).
@@ -1215,7 +1213,6 @@ public class ScrimController implements ViewTreeObserver.OnPreDrawListener, Dump
     private void updateScrimColor(View scrim, float alpha, int tint) {
         alpha = Math.max(0, Math.min(1.0f, alpha));
         boolean isDepthClock = mScrimBehind.getContext().getResources().getBoolean(R.bool.config_elixirDepthClockEnabled);
-        Settings.Secure.putInt(mScrimBehind.getContext().getContentResolver(), LOCKSCREEN_DEPTH_CLOCK, isDepthClock ? 1 : 0);
         if ((mState == ScrimState.KEYGUARD) && (isDepthClock)) {
             alpha = 0.0f;
         }
