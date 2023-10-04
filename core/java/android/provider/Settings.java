@@ -6056,41 +6056,11 @@ public final class Settings {
         public static final String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
 
         /**
-         * QS Header
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE = "qs_header_image";
-
-        /**
-         * QS Header fade level
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE_FADE_LEVEL = "qs_header_image_fade_level";
-
-        /**
-         * QS Header opacity level
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE_OPACITY_LEVEL = "qs_header_image_opacity_level";
-
-        /**
-         * QS Header image height
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE_HEIGHT = "qs_header_image_height";
-
-        /**
-         * QS Header image filter color
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE_FILTER_COLOR = "qs_header_image_filter_color";
-
-        /**
          * @hide
          */
         public static final String QS_TRANSPARENCY = "qs_transparency";
 
-        /**
+       /**
         * Toast animations
         *
         * @hide
@@ -6116,16 +6086,6 @@ public final class Settings {
          * @hide
          */
         public static final String STATUS_BAR_CLOCK_FONT_STYLE = "status_bar_clock_font_style";
-
-        /**
-         * @hide
-         */
-        public static final String QS_HEADER_CUSTOM_IMAGE_URI_ENABLED = "qs_header_custom_image_uri_enabled";
-
-        /**
-         * @hide
-         */
-        public static final String QS_HEADER_CUSTOM_IMAGE_URI = "qs_header_custom_image_uri";
 
         /**
          * Bottom screen shortcuts on keyguard
