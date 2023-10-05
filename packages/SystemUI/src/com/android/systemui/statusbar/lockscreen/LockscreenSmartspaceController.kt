@@ -32,6 +32,7 @@ import android.os.UserHandle
 import android.provider.Settings.Secure.LOCK_SCREEN_ALLOW_PRIVATE_NOTIFICATIONS
 import android.provider.Settings.Secure.LOCK_SCREEN_SHOW_NOTIFICATIONS
 import android.provider.Settings.Secure.LOCK_SCREEN_WEATHER_ENABLED
+import android.provider.Settings.Secure.LOCKSCREEN_DEPTH_CLOCK
 import android.util.Log
 import android.view.ContextThemeWrapper
 import android.view.View
@@ -241,6 +242,8 @@ constructor(
     }
 
     fun isEnabled(): Boolean {
+        val isDepthClockEnabled = secureSettings.getInt(LOCKSCREEN_DEPTH_CLOCK, 0) != 0
+        if (isDepthClockEnabled) return false
         execution.assertIsMainThread()
 
         return plugin != null
