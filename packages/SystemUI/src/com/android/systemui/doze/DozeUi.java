@@ -147,7 +147,10 @@ public class DozeUi implements DozeMachine.Part {
 
     private void publishStateForDClock(boolean isStarted) {
         boolean isDepthClock = mContext.getResources().getBoolean(R.bool.config_elixirDepthClockEnabled);
-        if ((isDepthClock) && (isStarted)) {
+        if (!isDepthClock) {
+            return;
+        }
+        if (isStarted) {
             Settings.Secure.putInt(mContext.getContentResolver(), LOCKSCREEN_USE_DOUBLE_LINE_CLOCK, 0);
         } else {
             Settings.Secure.putInt(mContext.getContentResolver(), LOCKSCREEN_USE_DOUBLE_LINE_CLOCK, 1);
